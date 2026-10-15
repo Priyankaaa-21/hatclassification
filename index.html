@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Six Thinking Hats: Scenario 2 - AI-Powered Exam Preparation App</title>
+  <meta name="description" content="A comprehensive Six Thinking Hats analysis of Scenario 2: AI-Powered Exam Preparation App for University Students.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Sticky Top Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-link" aria-label="Navigate to top">
+        <span class="brand-badge">Scenario 2</span>
+        <span class="brand-title">Six Thinking Hats</span>
+      </a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <nav id="primary-nav" class="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#white-hat" class="nav-link" data-hat="white">
+              <span class="nav-dot dot-white" aria-hidden="true"></span>
+              <span>White Hat</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#blue-hat" class="nav-link" data-hat="blue">
+              <span class="nav-dot dot-blue" aria-hidden="true"></span>
+              <span>Blue Hat</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#red-hat" class="nav-link" data-hat="red">
+              <span class="nav-dot dot-red" aria-hidden="true"></span>
+              <span>Red Hat</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#black-hat" class="nav-link" data-hat="black">
+              <span class="nav-dot dot-black" aria-hidden="true"></span>
+              <span>Black Hat</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#yellow-hat" class="nav-link" data-hat="yellow">
+              <span class="nav-dot dot-yellow" aria-hidden="true"></span>
+              <span>Yellow Hat</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#green-hat" class="nav-link" data-hat="green">
+              <span class="nav-dot dot-green" aria-hidden="true"></span>
+              <span>Green Hat</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#closing-hat" class="nav-link" data-hat="conclusion">
+              <span class="nav-dot dot-conclusion" aria-hidden="true"></span>
+              <span>Conclusion</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark mode" title="Toggle theme">
+            <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="content-wrapper">
+        <div class="hero-header reveal">
+          <span class="hero-pretitle">Edward de Bono's Framework Analysis</span>
+          <h1 class="hero-title">Six Thinking Hats: Scenario 2</h1>
+          <p class="hero-subtitle">AI-Powered Exam Preparation App for University Students</p>
+        </div>
+
+        <div class="scenario-card reveal">
+          <div class="scenario-badge">
+            <svg class="scenario-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+            <span>Case Scenario</span>
+          </div>
+          <p class="scenario-text">
+            An ed-tech startup has launched an AI-based mobile app that creates dynamic quizzes, explains concepts in simple terms, tracks weak areas, and adapts difficulty per student. It also has an AI chatbot that answers doubts instantly. It is gaining popularity among students, but educators worry it might reduce critical thinking, group learning, and promote shortcut learning over deep understanding.
+          </p>
+        </div>
+
+        <!-- Row of Six Hat Circles -->
+        <div class="hero-hat-nav reveal" aria-label="Jump to a specific Thinking Hat">
+          <a href="#white-hat" class="hat-circle-btn hat-btn-white" aria-label="Jump to 1. White Hat">
+            <span class="hat-circle-bubble">
+              <svg class="hat-circle-svg" viewBox="0 0 64 48" aria-hidden="true">
+                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="2"/>
+                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2"/>
+                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#9CA3AF"/>
+              </svg>
+            </span>
+            <span class="hat-circle-label">White Hat</span>
+          </a>
+
+          <a href="#blue-hat" class="hat-circle-btn hat-btn-blue" aria-label="Jump to 2. Blue Hat">
+            <span class="hat-circle-bubble">
+              <svg class="hat-circle-svg" viewBox="0 0 64 48" aria-hidden="true">
+                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#2563EB"/>
+                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#3B82F6"/>
+                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#1D4ED8"/>
+              </svg>
+            </span>
+            <span class="hat-circle-label">Blue Hat</span>
+          </a>
+
+          <a href="#red-hat" class="hat-circle-btn hat-btn-red" aria-label="Jump to 3. Red Hat">
+            <span class="hat-circle-bubble">
+              <svg class="hat-circle-svg" viewBox="0 0 64 48" aria-hidden="true">
+                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#DC2626"/>
+                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#EF4444"/>
+                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#991B1B"/>
+              </svg>
+            </span>
+            <span class="hat-circle-label">Red Hat</span>
+          </a>
+
+          <a href="#black-hat" class="hat-circle-btn hat-btn-black" aria-label="Jump to 4. Black Hat">
+            <span class="hat-circle-bubble">
+              <svg class="hat-circle-svg" viewBox="0 0 64 48" aria-hidden="true">
+                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#111827"/>
+                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#1F2937"/>
+                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#374151"/>
+              </svg>
+            </span>
+            <span class="hat-circle-label">Black Hat</span>
+          </a>
+
+          <a href="#yellow-hat" class="hat-circle-btn hat-btn-yellow" aria-label="Jump to 5. Yellow Hat">
+            <span class="hat-circle-bubble">
+              <svg class="hat-circle-svg" viewBox="0 0 64 48" aria-hidden="true">
+                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#EAB308"/>
+                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#FACC15"/>
+                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#CA8A04"/>
+              </svg>
+            </span>
+            <span class="hat-circle-label">Yellow Hat</span>
+          </a>
+
+          <a href="#green-hat" class="hat-circle-btn hat-btn-green" aria-label="Jump to 6. Green Hat">
+            <span class="hat-circle-bubble">
+              <svg class="hat-circle-svg" viewBox="0 0 64 48" aria-hidden="true">
+                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#16A34A"/>
+                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#22C55E"/>
+                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#15803D"/>
+              </svg>
+            </span>
+            <span class="hat-circle-label">Green Hat</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. WHITE HAT -->
+    <section id="white-hat" class="hat-section section-white" aria-labelledby="heading-white-hat">
+      <div class="hat-header-band">
+        <div class="content-wrapper header-band-content">
+          <div class="hat-icon-wrapper">
+            <svg class="hat-main-svg" viewBox="0 0 64 48" aria-hidden="true">
+              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="2"/>
+              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#F9FAFB" stroke="#9CA3AF" stroke-width="2"/>
+              <path d="M25 10C29 13 35 13 39 10" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#D1D5DB"/>
+            </svg>
+          </div>
+          <div class="hat-title-group">
+            <span class="hat-badge">Hat 1 of 6</span>
+            <h2 id="heading-white-hat" class="hat-title">1. WHITE HAT - Facts and Information</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper section-body">
+        <!-- Purpose & Focus Card -->
+        <div class="purpose-focus-card reveal">
+          <div class="pf-block">
+            <span class="pf-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 16 12 12 8"></polygon></svg>
+              Purpose
+            </span>
+            <p class="pf-text">To focus on objective information, data, and facts related to the problem.</p>
+          </div>
+          <div class="pf-divider" aria-hidden="true"></div>
+          <div class="pf-block">
+            <span class="pf-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              Focus
+            </span>
+            <p class="pf-text">What do we know about the case scenario? What information is missing?</p>
+          </div>
+        </div>
+
+        <div class="question-header reveal">
+          <h3 class="question-title">Q1. What are the facts we have, and what facts do we still need?</h3>
+        </div>
+
+        <!-- Facts We Have Group -->
+        <div class="subsection-group reveal">
+          <div class="subsection-banner">
+            <svg class="sub-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <h4 class="subsection-title">Facts we have:</h4>
+          </div>
+          <div class="card-grid">
+            <article class="point-card reveal">
+              <div class="card-badge">1</div>
+              <div class="card-content">
+                <h5 class="card-heading">Ed-tech Mobile App</h5>
+                <p class="card-text">An ed-tech startup has launched an AI-based mobile app for university students.</p>
+              </div>
+            </article>
+
+            <article class="point-card reveal">
+              <div class="card-badge">2</div>
+              <div class="card-content">
+                <h5 class="card-heading">Dynamic Quizzes & Explanations</h5>
+                <p class="card-text">The app creates dynamic quizzes and explains concepts in simple terms.</p>
+              </div>
+            </article>
+
+            <article class="point-card reveal">
+              <div class="card-badge">3</div>
+              <div class="card-content">
+                <h5 class="card-heading">Adaptive Difficulty Tracking</h5>
+                <p class="card-text">It tracks each student's weak areas and adapts the difficulty level.</p>
+              </div>
+            </article>
+
+            <article class="point-card reveal">
+              <div class="card-badge">4</div>
+              <div class="card-content">
+                <h5 class="card-heading">Instant AI Chatbot</h5>
+                <p class="card-text">It has an AI chatbot that answers doubts instantly.</p>
+              </div>
+            </article>
+
+            <article class="point-card reveal">
+              <div class="card-badge">5</div>
+              <div class="card-content">
+                <h5 class="card-heading">Student Popularity</h5>
+                <p class="card-text">The app is gaining popularity among students.</p>
+              </div>
+            </article>
+
+            <article class="point-card reveal">
+              <div class="card-badge">6</div>
+              <div class="card-content">
+                <h5 class="card-heading">Educator Concerns</h5>
+                <p class="card-text">Educators worry it may reduce critical thinking and group learning, and promote shortcut learning over deep understanding.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Facts We Still Need Group -->
+        <div class="subsection-group reveal">
+          <div class="subsection-banner">
+            <svg class="sub-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <h4 class="subsection-title">Facts we still need:</h4>
+          </div>
+          <div class="card-grid">
+            <article class="point-card reveal">
+              <div class="card-badge">1</div>
+              <div class="card-content">
+                <h5 class="card-heading">Chatbot Accuracy</h5>
+                <p class="card-text">How accurate and reliable are the chatbot's answers and explanations?</p>
+              </div>
+            </article>
+
+            <article class="point-card reveal">
+              <div class="card-badge">2</div>
+              <div class="card-content">
+                <h5 class="card-heading">Student Data Protection</h5>
+                <p class="card-text">What student data does the app collect, and how is it stored and protected?</p>
+              </div>
+            </article>
+
+            <article class="point-card reveal">
+              <div class="card-badge">3</div>
+              <div class="card-content">
+                <h5 class="card-heading">Syllabus Alignment</h5>
+                <p class="card-text">Is the content aligned with the university syllabus and exam pattern?</p>
+              </div>
+            </article>
+
+            <article class="point-card reveal">
+              <div class="card-badge">4</div>
+              <div class="card-content">
+                <h5 class="card-heading">Measurable Impact</h5>
+                <p class="card-text">Is there evidence that the app actually improves marks and understanding?</p>
+              </div>
+            </article>
+
+            <article class="point-card reveal">
+              <div class="card-badge">5</div>
+              <div class="card-content">
+                <h5 class="card-heading">Cost Structure</h5>
+                <p class="card-text">What is the cost, and is it free or subscription-based?</p>
+              </div>
+            </article>
+
+            <article class="point-card reveal">
+              <div class="card-badge">6</div>
+              <div class="card-content">
+                <h5 class="card-heading">Study Time Balance</h5>
+                <p class="card-text">How much time do students spend on it, and do they use it alongside textbooks and classes?</p>
+              </div>
+            </article>
+
+            <article class="point-card reveal">
+              <div class="card-badge">7</div>
+              <div class="card-content">
+                <h5 class="card-heading">Institutional Policy</h5>
+                <p class="card-text">Does the university have a policy on AI use in learning?</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. BLUE HAT -->
+    <section id="blue-hat" class="hat-section section-blue" aria-labelledby="heading-blue-hat">
+      <div class="hat-header-band">
+        <div class="content-wrapper header-band-content">
+          <div class="hat-icon-wrapper">
+            <svg class="hat-main-svg" viewBox="0 0 64 48" aria-hidden="true">
+              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#1D4ED8"/>
+              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#2563EB"/>
+              <path d="M25 10C29 13 35 13 39 10" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#1E40AF"/>
+            </svg>
+          </div>
+          <div class="hat-title-group">
+            <span class="hat-badge">Hat 2 of 6</span>
+            <h2 id="heading-blue-hat" class="hat-title">2. BLUE HAT - Process and Control</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper section-body">
+        <!-- Purpose & Focus Card -->
+        <div class="purpose-focus-card reveal">
+          <div class="pf-block">
+            <span class="pf-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 16 12 12 8"></polygon></svg>
+              Purpose
+            </span>
+            <p class="pf-text">To manage and organize the thinking process, set objectives, and keep the discussion on track.</p>
+          </div>
+          <div class="pf-divider" aria-hidden="true"></div>
+          <div class="pf-block">
+            <span class="pf-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              Focus
+            </span>
+            <p class="pf-text">What is the agenda? What is the order of the hats? What are the conclusions?</p>
+          </div>
+        </div>
+
+        <div class="question-header reveal">
+          <h3 class="question-title">Q1. What is our thinking process?</h3>
+        </div>
+
+        <!-- Agenda Box -->
+        <div class="agenda-box reveal">
+          <div class="agenda-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>Agenda</span>
+          </div>
+          <p class="agenda-text">
+            To decide whether, and how, students and educators should use the AI exam preparation app without losing critical thinking, group learning, and deep understanding.
+          </p>
+        </div>
+
+        <div class="question-header reveal">
+          <h3 class="question-title">Q2. How should we proceed?</h3>
+          <p class="sub-lead">Order of hats: White, Blue, Red, Black, Yellow, Green.</p>
+        </div>
+
+        <!-- Hat Order Visual Stepper -->
+        <div class="stepper-container reveal" aria-label="Visual Stepper showing the order of Thinking Hats">
+          <ol class="hat-stepper">
+            <li class="stepper-step step-white">
+              <div class="step-marker" aria-hidden="true">
+                <span class="step-num">1</span>
+              </div>
+              <div class="step-content">
+                <span class="step-hat-name">White</span>
+                <p class="step-hat-desc">Collect the known and missing facts.</p>
+              </div>
+            </li>
+
+            <li class="stepper-step step-blue current-active-step">
+              <div class="step-marker" aria-hidden="true">
+                <span class="step-num">2</span>
+              </div>
+              <div class="step-content">
+                <span class="step-hat-name">Blue</span>
+                <p class="step-hat-desc">Set the agenda and the order.</p>
+              </div>
+            </li>
+
+            <li class="stepper-step step-red">
+              <div class="step-marker" aria-hidden="true">
+                <span class="step-num">3</span>
+              </div>
+              <div class="step-content">
+                <span class="step-hat-name">Red</span>
+                <p class="step-hat-desc">Share gut feelings about the app.</p>
+              </div>
+            </li>
+
+            <li class="stepper-step step-black">
+              <div class="step-marker" aria-hidden="true">
+                <span class="step-num">4</span>
+              </div>
+              <div class="step-content">
+                <span class="step-hat-name">Black</span>
+                <p class="step-hat-desc">Identify the risks.</p>
+              </div>
+            </li>
+
+            <li class="stepper-step step-yellow">
+              <div class="step-marker" aria-hidden="true">
+                <span class="step-num">5</span>
+              </div>
+              <div class="step-content">
+                <span class="step-hat-name">Yellow</span>
+                <p class="step-hat-desc">Identify the benefits.</p>
+              </div>
+            </li>
+
+            <li class="stepper-step step-green">
+              <div class="step-marker" aria-hidden="true">
+                <span class="step-num">6</span>
+              </div>
+              <div class="step-content">
+                <span class="step-hat-name">Green</span>
+                <p class="step-hat-desc">Build a primary plan and an alternative plan.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <p class="closing-note reveal">(The final conclusion is given in the closing Blue Hat section at the end.)</p>
+      </div>
+    </section>
+
+    <!-- 3. RED HAT -->
+    <section id="red-hat" class="hat-section section-red" aria-labelledby="heading-red-hat">
+      <div class="hat-header-band">
+        <div class="content-wrapper header-band-content">
+          <div class="hat-icon-wrapper">
+            <svg class="hat-main-svg" viewBox="0 0 64 48" aria-hidden="true">
+              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#991B1B"/>
+              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#DC2626"/>
+              <path d="M25 10C29 13 35 13 39 10" stroke="#F87171" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#7F1D1D"/>
+            </svg>
+          </div>
+          <div class="hat-title-group">
+            <span class="hat-badge">Hat 3 of 6</span>
+            <h2 id="heading-red-hat" class="hat-title">3. RED HAT - Feelings and Intuition</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper section-body">
+        <!-- Purpose & Focus Card -->
+        <div class="purpose-focus-card reveal">
+          <div class="pf-block">
+            <span class="pf-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 16 12 12 8"></polygon></svg>
+              Purpose
+            </span>
+            <p class="pf-text">To express gut feelings, emotions, and intuition without needing to justify them.</p>
+          </div>
+          <div class="pf-divider" aria-hidden="true"></div>
+          <div class="pf-block">
+            <span class="pf-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              Focus
+            </span>
+            <p class="pf-text">How do we feel about this case scenario? Will I be able to solve it?</p>
+          </div>
+        </div>
+
+        <div class="question-header reveal">
+          <h3 class="question-title">Q1. What is our gut reaction while trying to solve this problem?</h3>
+        </div>
+
+        <!-- Positive and Negative Feelings Side-by-Side Columns -->
+        <div class="feelings-columns-container reveal">
+          <!-- Positive Feelings Column (Green-tinted) -->
+          <div class="feelings-column col-positive">
+            <div class="feelings-col-header">
+              <svg class="feelings-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+              </svg>
+              <h4 class="feelings-title">Positive feelings:</h4>
+            </div>
+            <div class="feelings-list">
+              <div class="feeling-item">
+                <span class="feeling-num">1</span>
+                <p class="feeling-text">Students may feel confident and less stressed because help is available at any time.</p>
+              </div>
+              <div class="feeling-item">
+                <span class="feeling-num">2</span>
+                <p class="feeling-text">Students may feel motivated when the quizzes match their level.</p>
+              </div>
+              <div class="feeling-item">
+                <span class="feeling-num">3</span>
+                <p class="feeling-text">Students may feel supported when doubts are cleared instantly, even late at night.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Negative Feelings Column (Red-tinted) -->
+          <div class="feelings-column col-negative">
+            <div class="feelings-col-header">
+              <svg class="feelings-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-3"></path>
+              </svg>
+              <h4 class="feelings-title">Negative feelings:</h4>
+            </div>
+            <div class="feelings-list">
+              <div class="feeling-item">
+                <span class="feeling-num">1</span>
+                <p class="feeling-text">Educators may feel worried that students are skipping real understanding.</p>
+              </div>
+              <div class="feeling-item">
+                <span class="feeling-num">2</span>
+                <p class="feeling-text">Students may feel guilty or anxious about depending on the chatbot.</p>
+              </div>
+              <div class="feeling-item">
+                <span class="feeling-num">3</span>
+                <p class="feeling-text">Teachers may feel their role is being replaced.</p>
+              </div>
+              <div class="feeling-item">
+                <span class="feeling-num">4</span>
+                <p class="feeling-text">Students may feel isolated if they stop studying with friends.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Distinct Quote-style Box for "Will I be able to solve it?" -->
+        <div class="quote-box reveal">
+          <div class="quote-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-8.983z"/>
+            </svg>
+          </div>
+          <div class="quote-content">
+            <span class="quote-label">Answer to "Will I be able to solve it?":</span>
+            <blockquote class="quote-body">
+              Yes. The problem is not the app itself but how it is used. We can solve it by treating the app as a support tool and not a substitute for thinking, teaching, and group learning.
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Section Conclusion Callout -->
+        <div class="conclusion-callout reveal">
+          <div class="conclusion-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>Conclusion</span>
+          </div>
+          <p class="conclusion-text">
+            Our gut feeling is cautiously optimistic. We welcome the convenience of AI, but we want students to still think for themselves, learn together, and truly understand.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. BLACK HAT -->
+    <section id="black-hat" class="hat-section section-black" aria-labelledby="heading-black-hat">
+      <div class="hat-header-band">
+        <div class="content-wrapper header-band-content">
+          <div class="hat-icon-wrapper">
+            <svg class="hat-main-svg" viewBox="0 0 64 48" aria-hidden="true">
+              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#030712"/>
+              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#111827"/>
+              <path d="M25 10C29 13 35 13 39 10" stroke="#4B5563" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#374151"/>
+            </svg>
+          </div>
+          <div class="hat-title-group">
+            <span class="hat-badge">Hat 4 of 6</span>
+            <h2 id="heading-black-hat" class="hat-title">4. BLACK HAT - Caution and Risks</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper section-body">
+        <!-- Purpose & Focus Card -->
+        <div class="purpose-focus-card reveal">
+          <div class="pf-block">
+            <span class="pf-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 16 12 12 8"></polygon></svg>
+              Purpose
+            </span>
+            <p class="pf-text">To identify possible problems, risks, disadvantages, and reasons the proposal might fail.</p>
+          </div>
+          <div class="pf-divider" aria-hidden="true"></div>
+          <div class="pf-block">
+            <span class="pf-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              Focus
+            </span>
+            <p class="pf-text">What could go wrong when students use the AI exam preparation app?</p>
+          </div>
+        </div>
+
+        <div class="question-header reveal">
+          <h3 class="question-title">Q1. What are the potential downsides, problems, and risks involved? Mention them.</h3>
+        </div>
+
+        <div class="card-grid">
+          <!-- Risk 1 -->
+          <article class="point-card with-icon reveal">
+            <div class="card-header-line">
+              <div class="card-badge">1</div>
+              <div class="card-inline-icon icon-risk" aria-hidden="true">
+                <!-- Brain with question / analysis icon -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04z"></path>
+                  <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-heading">Reduced critical thinking:</h4>
+              <p class="card-text">Students may accept AI answers without questioning them. They may practise less analysis, reasoning, and problem-solving.</p>
+            </div>
+          </article>
+
+          <!-- Risk 2 -->
+          <article class="point-card with-icon reveal">
+            <div class="card-header-line">
+              <div class="card-badge">2</div>
+              <div class="card-inline-icon icon-risk" aria-hidden="true">
+                <!-- Lightning / shortcut icon -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-heading">Shortcut learning:</h4>
+              <p class="card-text">Students may memorise quiz patterns and simple explanations only to pass exams. This leads to surface-level learning instead of deep understanding.</p>
+            </div>
+          </article>
+
+          <!-- Risk 3 -->
+          <article class="point-card with-icon reveal">
+            <div class="card-header-line">
+              <div class="card-badge">3</div>
+              <div class="card-inline-icon icon-risk" aria-hidden="true">
+                <!-- Loss of group / disconnected users icon -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <line x1="19" y1="8" x2="23" y2="12"></line>
+                  <line x1="23" y1="8" x2="19" y2="12"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-heading">Loss of group learning:</h4>
+              <p class="card-text">Students may study alone with the app instead of discussing and teaching each other. This reduces teamwork, communication, and peer learning.</p>
+            </div>
+          </article>
+
+          <!-- Risk 4 -->
+          <article class="point-card with-icon reveal">
+            <div class="card-header-line">
+              <div class="card-badge">4</div>
+              <div class="card-inline-icon icon-risk" aria-hidden="true">
+                <!-- Misleading answers / alert triangle -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                  <line x1="12" y1="9" x2="12" y2="13"></line>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-heading">Incorrect or misleading answers:</h4>
+              <p class="card-text">The chatbot may give wrong or oversimplified explanations. Students may trust them blindly, especially close to exams.</p>
+            </div>
+          </article>
+
+          <!-- Risk 5 -->
+          <article class="point-card with-icon reveal">
+            <div class="card-header-line">
+              <div class="card-badge">5</div>
+              <div class="card-inline-icon icon-risk" aria-hidden="true">
+                <!-- Overdependence / tether link icon -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-heading">Over-dependence on AI:</h4>
+              <p class="card-text">Students may feel unable to study or solve doubts without the app. They may skip textbooks, notes, and teachers.</p>
+            </div>
+          </article>
+
+          <!-- Risk 6 -->
+          <article class="point-card with-icon reveal">
+            <div class="card-header-line">
+              <div class="card-badge">6</div>
+              <div class="card-inline-icon icon-risk" aria-hidden="true">
+                <!-- Data privacy / security shield lock -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-heading">Data privacy risks:</h4>
+              <p class="card-text">The app collects data on performance, weak areas, and study habits. If this data is leaked or misused, student privacy is affected.</p>
+            </div>
+          </article>
+
+          <!-- Risk 7 -->
+          <article class="point-card with-icon reveal">
+            <div class="card-header-line">
+              <div class="card-badge">7</div>
+              <div class="card-inline-icon icon-risk" aria-hidden="true">
+                <!-- Inaccurate personalisation / unbalanced scale -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-heading">Unfair or inaccurate personalisation:</h4>
+              <p class="card-text">Adaptive difficulty may wrongly judge a student's ability. It may keep some students on easy content and limit their growth.</p>
+            </div>
+          </article>
+
+          <!-- Risk 8 -->
+          <article class="point-card with-icon reveal">
+            <div class="card-header-line">
+              <div class="card-badge">8</div>
+              <div class="card-inline-icon icon-risk" aria-hidden="true">
+                <!-- Unequal access / digital barrier -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="1" y1="1" x2="23" y2="23"></line>
+                  <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path>
+                  <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path>
+                  <path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path>
+                  <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path>
+                  <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                  <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-heading">Unequal access and cost:</h4>
+              <p class="card-text">Students without good devices, internet, or money for subscriptions may fall behind. This creates a gap between students.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Section Conclusion Callout -->
+        <div class="conclusion-callout reveal">
+          <div class="conclusion-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>Conclusion</span>
+          </div>
+          <p class="conclusion-text">
+            Students should not rely on the app alone. Teacher guidance, verification of AI answers, group study, and clear privacy policies are necessary.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. YELLOW HAT -->
+    <section id="yellow-hat" class="hat-section section-yellow" aria-labelledby="heading-yellow-hat">
+      <div class="hat-header-band">
+        <div class="content-wrapper header-band-content">
+          <div class="hat-icon-wrapper">
+            <svg class="hat-main-svg" viewBox="0 0 64 48" aria-hidden="true">
+              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#CA8A04"/>
+              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#EAB308"/>
+              <path d="M25 10C29 13 35 13 39 10" stroke="#FEF08A" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#A16207"/>
+            </svg>
+          </div>
+          <div class="hat-title-group">
+            <span class="hat-badge">Hat 5 of 6</span>
+            <h2 id="heading-yellow-hat" class="hat-title">5. YELLOW HAT - Benefits and Value</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper section-body">
+        <!-- Purpose & Focus Card -->
+        <div class="purpose-focus-card reveal">
+          <div class="pf-block">
+            <span class="pf-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 16 12 12 8"></polygon></svg>
+              Purpose
+            </span>
+            <p class="pf-text">To focus on advantages, positive outcomes, opportunities, and the value of the proposal.</p>
+          </div>
+          <div class="pf-divider" aria-hidden="true"></div>
+          <div class="pf-block">
+            <span class="pf-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              Focus
+            </span>
+            <p class="pf-text">How can the AI exam preparation app benefit students and educators?</p>
+          </div>
+        </div>
+
+        <div class="question-header reveal">
+          <h3 class="question-title">Q1. What value does it create for the case scenario?</h3>
+        </div>
+
+        <div class="card-grid">
+          <!-- Benefit 1 -->
+          <article class="point-card with-icon reveal">
+            <div class="card-header-line">
+              <div class="card-badge">1</div>
+              <div class="card-inline-icon icon-benefit" aria-hidden="true">
+                <!-- Personalized learning / customization -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-heading">Personalised learning:</h4>
+              <p class="card-text">The app adapts difficulty to each student's level, so everyone learns at their own pace.</p>
+            </div>
+          </article>
+
+          <!-- Benefit 2 -->
+          <article class="point-card with-icon reveal">
+            <div class="card-header-line">
+              <div class="card-badge">2</div>
+              <div class="card-inline-icon icon-benefit" aria-hidden="true">
+                <!-- Target / identify weak areas -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-heading">Identifies weak areas:</h4>
+              <p class="card-text">It tracks weak topics so students can focus their revision where it matters most.</p>
+            </div>
+          </article>
+
+          <!-- Benefit 3 -->
+          <article class="point-card with-icon reveal">
+            <div class="card-header-line">
+              <div class="card-badge">3</div>
+              <div class="card-inline-icon icon-benefit" aria-hidden="true">
+                <!-- Instant doubt resolution / quick chat -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  <path d="M13 8l-3 3 2 2"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-heading">Instant doubt resolution:</h4>
+              <p class="card-text">The chatbot answers doubts at any time, so students don't stay stuck.</p>
+            </div>
+          </article>
+
+          <!-- Benefit 4 -->
+          <article class="point-card with-icon reveal">
+            <div class="card-header-line">
+              <div class="card-badge">4</div>
+              <div class="card-inline-icon icon-benefit" aria-hidden="true">
+                <!-- Simple explanations / lightbulb clarity -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 18h6"></path>
+                  <path d="M10 22h4"></path>
+                  <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-heading">Simple explanations:</h4>
+              <p class="card-text">Complex concepts are explained in easy terms, which helps students who find a topic hard.</p>
+            </div>
+          </article>
+
+          <!-- Benefit 5 -->
+          <article class="point-card with-icon reveal">
+            <div class="card-header-line">
+              <div class="card-badge">5</div>
+              <div class="card-inline-icon icon-benefit" aria-hidden="true">
+                <!-- Active practice / interactive quizzes -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 11 12 14 22 4"></polyline>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-heading">Active practice:</h4>
+              <p class="card-text">Dynamic quizzes give regular practice and improve recall and exam confidence.</p>
+            </div>
+          </article>
+
+          <!-- Benefit 6 -->
+          <article class="point-card with-icon reveal">
+            <div class="card-header-line">
+              <div class="card-badge">6</div>
+              <div class="card-inline-icon icon-benefit" aria-hidden="true">
+                <!-- Saves time / efficiency clock -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-heading">Saves time and effort:</h4>
+              <p class="card-text">Students study more efficiently and spend less time searching for resources.</p>
+            </div>
+          </article>
+
+          <!-- Benefit 7 -->
+          <article class="point-card with-icon reveal">
+            <div class="card-header-line">
+              <div class="card-badge">7</div>
+              <div class="card-inline-icon icon-benefit" aria-hidden="true">
+                <!-- Support for teachers / dashboard insights -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-heading">Support for teachers:</h4>
+              <p class="card-text">Teachers can use the data on common weak areas to plan better lessons and spend class time on discussion.</p>
+            </div>
+          </article>
+
+          <!-- Benefit 8 -->
+          <article class="point-card with-icon reveal">
+            <div class="card-header-line">
+              <div class="card-badge">8</div>
+              <div class="card-inline-icon icon-benefit" aria-hidden="true">
+                <!-- Wider reach / global accessibility -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-heading">Wider reach:</h4>
+              <p class="card-text">Students who cannot afford coaching or private tutors get access to guidance.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Section Conclusion Callout -->
+        <div class="conclusion-callout reveal">
+          <div class="conclusion-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>Conclusion</span>
+          </div>
+          <p class="conclusion-text">
+            Used properly, the app improves learning efficiency, confidence, and exam performance, and supports teachers instead of replacing them.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. GREEN HAT -->
+    <section id="green-hat" class="hat-section section-green" aria-labelledby="heading-green-hat">
+      <div class="hat-header-band">
+        <div class="content-wrapper header-band-content">
+          <div class="hat-icon-wrapper">
+            <svg class="hat-main-svg" viewBox="0 0 64 48" aria-hidden="true">
+              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#15803D"/>
+              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#16A34A"/>
+              <path d="M25 10C29 13 35 13 39 10" stroke="#86EFAC" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#14532D"/>
+            </svg>
+          </div>
+          <div class="hat-title-group">
+            <span class="hat-badge">Hat 6 of 6</span>
+            <h2 id="heading-green-hat" class="hat-title">6. GREEN HAT - Creativity and Ideas</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper section-body">
+        <!-- Purpose & Focus Card -->
+        <div class="purpose-focus-card reveal">
+          <div class="pf-block">
+            <span class="pf-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 16 12 12 8"></polygon></svg>
+              Purpose
+            </span>
+            <p class="pf-text">To stimulate new ideas, possibilities, and alternative solutions.</p>
+          </div>
+          <div class="pf-divider" aria-hidden="true"></div>
+          <div class="pf-block">
+            <span class="pf-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              Focus
+            </span>
+            <p class="pf-text">What new ideas or creative solutions can we generate? What are some different perspectives?</p>
+          </div>
+        </div>
+
+        <!-- Primary Plan and Alternative Plan Panels -->
+        <div class="plans-container">
+          <!-- Panel 1: Primary Plan -->
+          <div class="plan-panel panel-primary reveal">
+            <div class="plan-panel-header">
+              <div class="plan-badge badge-primary-plan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <span>Primary Plan</span>
+              </div>
+              <h3 class="plan-title">Q1. What is our primary plan to solve the case scenario?</h3>
+              <p class="plan-subtitle">Primary plan: guided and balanced use of the app.</p>
+            </div>
+
+            <div class="card-grid">
+              <article class="point-card reveal">
+                <div class="card-badge">1</div>
+                <div class="card-content">
+                  <h4 class="card-heading">Classroom Supplement</h4>
+                  <p class="card-text">Use the app as a supplement to classroom learning, not a replacement.</p>
+                </div>
+              </article>
+
+              <article class="point-card reveal">
+                <div class="card-badge">2</div>
+                <div class="card-content">
+                  <h4 class="card-heading">Reasoning Prompts</h4>
+                  <p class="card-text">Add "explain your reasoning" prompts, so the chatbot gives hints first and full answers later.</p>
+                </div>
+              </article>
+
+              <article class="point-card reveal">
+                <div class="card-badge">3</div>
+                <div class="card-content">
+                  <h4 class="card-heading">Group Study Integration</h4>
+                  <p class="card-text">Organise group quiz sessions and peer-teaching so the app's weak-area data feeds group study.</p>
+                </div>
+              </article>
+
+              <article class="point-card reveal">
+                <div class="card-badge">4</div>
+                <div class="card-content">
+                  <h4 class="card-heading">Faculty Review Sessions</h4>
+                  <p class="card-text">Have teachers review class-level insights and run doubt-clearing and discussion sessions.</p>
+                </div>
+              </article>
+
+              <article class="point-card reveal">
+                <div class="card-badge">5</div>
+                <div class="card-content">
+                  <h4 class="card-heading">Verification Training</h4>
+                  <p class="card-text">Train students to verify AI answers against textbooks and notes.</p>
+                </div>
+              </article>
+
+              <article class="point-card reveal">
+                <div class="card-badge">6</div>
+                <div class="card-content">
+                  <h4 class="card-heading">Data Privacy Safeguards</h4>
+                  <p class="card-text">Set clear privacy policies for data collection and storage.</p>
+                </div>
+              </article>
+
+              <article class="point-card reveal">
+                <div class="card-badge">7</div>
+                <div class="card-content">
+                  <h4 class="card-heading">Deeper Comprehension Assessments</h4>
+                  <p class="card-text">Include assessments that test understanding, such as viva, case studies, and open-ended questions, not just recall.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Panel 2: Alternative Plan -->
+          <div class="plan-panel panel-alternative reveal">
+            <div class="plan-panel-header">
+              <div class="plan-badge badge-alt-plan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polyline points="23 4 23 10 17 10"></polyline>
+                  <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                </svg>
+                <span>Alternative Plan</span>
+              </div>
+              <h3 class="plan-title">Q2. What is our alternative plan if the primary plan fails?</h3>
+              <p class="plan-subtitle">Alternative plan: limited and controlled use.</p>
+            </div>
+
+            <div class="card-grid">
+              <article class="point-card reveal">
+                <div class="card-badge">1</div>
+                <div class="card-content">
+                  <h4 class="card-heading">Restricted Chatbot</h4>
+                  <p class="card-text">Restrict the chatbot and keep only the quizzes and weak-area tracking.</p>
+                </div>
+              </article>
+
+              <article class="point-card reveal">
+                <div class="card-badge">2</div>
+                <div class="card-content">
+                  <h4 class="card-heading">Supervised Lab Sessions</h4>
+                  <p class="card-text">Use the app only in supervised sessions or labs.</p>
+                </div>
+              </article>
+
+              <article class="point-card reveal">
+                <div class="card-badge">3</div>
+                <div class="card-content">
+                  <h4 class="card-heading">College-Managed Platform</h4>
+                  <p class="card-text">Build or choose a college-managed, syllabus-aligned AI tool with teacher oversight and better data control.</p>
+                </div>
+              </article>
+
+              <article class="point-card reveal">
+                <div class="card-badge">4</div>
+                <div class="card-content">
+                  <h4 class="card-heading">Traditional Learning Focus</h4>
+                  <p class="card-text">Switch back to traditional methods such as study groups, mentoring, and faculty-led revision, using AI only for practice questions.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. BLUE HAT (CLOSING) - Conclusions -->
+    <section id="closing-hat" class="hat-section section-closing" aria-labelledby="heading-closing-hat">
+      <div class="hat-header-band">
+        <div class="content-wrapper header-band-content">
+          <div class="hat-icon-wrapper">
+            <svg class="hat-main-svg" viewBox="0 0 64 48" aria-hidden="true">
+              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#1E3A8A"/>
+              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#2563EB"/>
+              <path d="M25 10C29 13 35 13 39 10" stroke="#93C5FD" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#172554"/>
+            </svg>
+          </div>
+          <div class="hat-title-group">
+            <span class="hat-badge">Final Synthesis</span>
+            <h2 id="heading-closing-hat" class="hat-title">7. BLUE HAT (CLOSING) - Conclusions</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper section-body">
+        <div class="card-grid closing-summary-grid">
+          <article class="point-card reveal">
+            <div class="card-badge">1</div>
+            <div class="card-content">
+              <h4 class="card-heading">Demonstrated Core Value</h4>
+              <p class="card-text">The app offers real value through personalised practice, instant help, and efficient revision.</p>
+            </div>
+          </article>
+
+          <article class="point-card reveal">
+            <div class="card-badge">2</div>
+            <div class="card-content">
+              <h4 class="card-heading">Key Risk Factors</h4>
+              <p class="card-text">Its main risks are reduced critical thinking, shortcut learning, loss of group learning, wrong answers, and data privacy.</p>
+            </div>
+          </article>
+
+          <article class="point-card full-width-card reveal">
+            <div class="card-badge">3</div>
+            <div class="card-content">
+              <h4 class="card-heading">Optimal Implementation Approach</h4>
+              <p class="card-text">The best approach is balanced, guided use: AI for practice and support, teachers for guidance, and group learning for deeper understanding.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Final Decision Callout -->
+        <div class="final-decision-callout reveal">
+          <div class="decision-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 14 14"></polyline>
+            </svg>
+            <span>Strategic Synthesis</span>
+          </div>
+          <h3 class="decision-title">Final decision:</h3>
+          <p class="decision-text">
+            Adopt the AI exam preparation app as a supporting tool, with teacher supervision, privacy safeguards, and activities that build critical thinking and teamwork.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="content-wrapper footer-content">
+      <div class="footer-left">
+        <p class="footer-text font-semibold">Six Thinking Hats by Edward de Bono</p>
+        <p class="footer-subtext">AI-Powered Exam Preparation App for University Students</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-hat-legend" aria-hidden="true">
+          <span class="legend-dot dot-white" title="White Hat"></span>
+          <span class="legend-dot dot-blue" title="Blue Hat"></span>
+          <span class="legend-dot dot-red" title="Red Hat"></span>
+          <span class="legend-dot dot-black" title="Black Hat"></span>
+          <span class="legend-dot dot-yellow" title="Yellow Hat"></span>
+          <span class="legend-dot dot-green" title="Green Hat"></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
