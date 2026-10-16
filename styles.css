@@ -446,6 +446,33 @@ ul, ol {
   margin: 0 auto;
 }
 
+/* Student Meta Badge in Hero */
+.student-meta-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-sm);
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  margin-top: 18px;
+  font-size: 0.94rem;
+  color: var(--text-secondary);
+}
+
+.student-meta-badge strong {
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.meta-sep {
+  color: var(--hat-blue);
+  opacity: 0.6;
+}
+
 /* Scenario Summary Card */
 .scenario-card {
   background-color: var(--bg-surface);
@@ -494,6 +521,95 @@ ul, ol {
   font-size: 1.06rem;
   line-height: 1.75;
   color: var(--text-main);
+}
+
+/* Scenario Features Breakdown */
+.scenario-features-wrapper {
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px dashed var(--border-medium);
+}
+
+.scenario-features-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.feature-header-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--hat-blue);
+}
+
+.scenario-features-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+.scenario-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.scenario-feature-card {
+  background-color: var(--bg-surface-alt);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.scenario-feature-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--hat-blue-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.feature-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-full);
+  background-color: var(--hat-blue);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.feature-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.feature-name {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.feature-desc {
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .scenario-features-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Hero Row of 6 Hat Circles */
@@ -1627,6 +1743,17 @@ ul, ol {
 .footer-subtext {
   font-size: 0.9rem;
   color: var(--text-secondary);
+}
+
+.footer-author-meta {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.footer-author-meta strong {
+  color: var(--text-main);
+  font-weight: 700;
 }
 
 .footer-hat-legend {

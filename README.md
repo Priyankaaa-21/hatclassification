@@ -1,7 +1,8 @@
 # Six Thinking Hats: Scenario 2
 
 > **AI-Powered Exam Preparation App for University Students**  
-> A structured analysis using Edward de Bono's Six Thinking Hats framework.
+> A structured analysis using Edward de Bono's Six Thinking Hats framework.  
+> **Prepared by:** Sakshi Chourasia (PRN: 26070126190)
 
 ## 🎩 Overview
 
