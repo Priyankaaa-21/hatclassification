@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Problem Solving Using Six Thinking Hats — Assignment Document</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm 18mm 20mm 18mm;
+      @bottom-right {
+        content: counter(page);
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        font-size: 9pt;
+        color: #64748B;
+      }
+      @bottom-left {
+        content: "Sakshi Chourasia — PRN: 26070126190 | Critical Thinking";
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        font-size: 9pt;
+        color: #64748B;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.6;
+      color: #1E293B;
+      background-color: #FFFFFF;
+      padding: 0;
+    }
+
+    /* Document Header */
+    .doc-header {
+      border-bottom: 2.5px solid #1E3A8A;
+      padding-bottom: 18px;
+      margin-bottom: 22px;
+    }
+
+    .doc-title {
+      font-size: 20pt;
+      font-weight: 800;
+      color: #0F172A;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+
+    .doc-subtitle {
+      font-size: 12.5pt;
+      font-weight: 600;
+      color: #2563EB;
+      line-height: 1.35;
+      margin-bottom: 14px;
+    }
+
+    .meta-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 14px 0;
+      background-color: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .meta-table td {
+      padding: 6px 12px;
+      font-size: 9.5pt;
+      border: 1px solid #E2E8F0;
+    }
+
+    .meta-table .label {
+      font-weight: 700;
+      color: #475569;
+      width: 22%;
+      background-color: #F1F5F9;
+    }
+
+    .meta-table .val {
+      color: #0F172A;
+      font-weight: 600;
+    }
+
+    .intro-statement {
+      font-size: 10pt;
+      font-style: italic;
+      color: #334155;
+      background-color: #EFF6FF;
+      border-left: 4px solid #2563EB;
+      padding: 8px 14px;
+      margin-top: 10px;
+      border-radius: 0 4px 4px 0;
+    }
+
+    /* Section Headings */
+    h2.section-heading {
+      font-size: 13pt;
+      font-weight: 800;
+      color: #0F172A;
+      margin-top: 22px;
+      margin-bottom: 10px;
+      padding-bottom: 4px;
+      border-bottom: 1.5px solid #CBD5E1;
+      page-break-after: avoid;
+    }
+
+    h3.sub-heading {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #1E3A8A;
+      margin-top: 14px;
+      margin-bottom: 6px;
+      page-break-after: avoid;
+    }
+
+    p {
+      margin-bottom: 10px;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    /* Tables */
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 16px 0;
+      font-size: 9.5pt;
+      page-break-inside: avoid;
+    }
+
+    table.data-table th {
+      background-color: #F1F5F9;
+      color: #0F172A;
+      font-weight: 700;
+      text-align: left;
+      padding: 8px 10px;
+      border: 1px solid #CBD5E1;
+    }
+
+    table.data-table td {
+      padding: 8px 10px;
+      border: 1px solid #E2E8F0;
+      vertical-align: top;
+      color: #334155;
+    }
+
+    table.data-table tr:nth-child(even) td {
+      background-color: #F8FAFC;
+    }
+
+    .hat-pill {
+      display: inline-block;
+      font-weight: 700;
+      color: #0F172A;
+    }
+
+    /* Hat Sections */
+    .hat-section-block {
+      margin-top: 22px;
+      page-break-inside: avoid;
+    }
+
+    .hat-banner {
+      padding: 8px 14px;
+      border-radius: 4px;
+      font-size: 12pt;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      page-break-after: avoid;
+    }
+
+    .banner-white { background-color: #F1F5F9; color: #0F172A; border-left: 6px solid #94A3B8; border: 1px solid #CBD5E1; border-left-width: 6px; }
+    .banner-red { background-color: #FEF2F2; color: #991B1B; border-left: 6px solid #DC2626; border: 1px solid #FECACA; border-left-width: 6px; }
+    .banner-black { background-color: #F8FAFC; color: #0F172A; border-left: 6px solid #0F172A; border: 1px solid #CBD5E1; border-left-width: 6px; }
+    .banner-yellow { background-color: #FEFCE8; color: #854D0E; border-left: 6px solid #EAB308; border: 1px solid #FEF08A; border-left-width: 6px; }
+    .banner-green { background-color: #F0FDF4; color: #166534; border-left: 6px solid #16A34A; border: 1px solid #BBF7D0; border-left-width: 6px; }
+    .banner-blue { background-color: #EFF6FF; color: #1E40AF; border-left: 6px solid #2563EB; border: 1px solid #BFDBFE; border-left-width: 6px; }
+    .banner-conclusion { background-color: #EEF2FF; color: #3730A3; border-left: 6px solid #4F46E5; border: 1px solid #C7D2FE; border-left-width: 6px; }
+
+    .meta-box {
+      background-color: #FAFAFA;
+      border: 1px solid #E2E8F0;
+      padding: 8px 12px;
+      margin-bottom: 12px;
+      border-radius: 4px;
+      font-size: 9.5pt;
+      page-break-inside: avoid;
+    }
+
+    .meta-box p {
+      margin-bottom: 4px;
+      text-align: left;
+    }
+
+    .meta-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .meta-box strong {
+      color: #0F172A;
+    }
+
+    /* Q&A Items */
+    .qa-item {
+      margin-bottom: 14px;
+      page-break-inside: avoid;
+    }
+
+    .qa-q {
+      font-weight: 700;
+      font-size: 10.5pt;
+      color: #0F172A;
+      margin-bottom: 4px;
+    }
+
+    .qa-a {
+      color: #1E293B;
+      padding-left: 8px;
+      border-left: 2.5px solid #CBD5E1;
+      margin-bottom: 8px;
+    }
+
+    .proposal-list {
+      margin: 8px 0 12px 14px;
+    }
+
+    .proposal-item {
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+
+    .phase-list {
+      margin: 8px 0 12px 14px;
+    }
+
+    .phase-item {
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+
+    .project-card {
+      background-color: #F8FAFC;
+      border: 1.5px solid #2563EB;
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin: 14px 0;
+      text-align: center;
+      page-break-inside: avoid;
+    }
+
+    .project-card strong {
+      font-size: 11pt;
+      color: #0F172A;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .project-card a {
+      color: #2563EB;
+      font-weight: 700;
+      text-decoration: underline;
+      font-size: 10.5pt;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Document Header -->
+  <header class="doc-header">
+    <h1 class="doc-title">Problem Solving Using Six Thinking Hats</h1>
+    <h2 class="doc-subtitle">A Critical Analysis of an AI-Powered Exam Preparation App for University Students</h2>
+
+    <table class="meta-table">
+      <tr>
+        <td class="label">Student Name:</td>
+        <td class="val">Sakshi Chourasia</td>
+        <td class="label">PRN:</td>
+        <td class="val">26070126190</td>
+      </tr>
+      <tr>
+        <td class="label">Branch:</td>
+        <td class="val">AIML</td>
+        <td class="label">Division:</td>
+        <td class="val">C2</td>
+      </tr>
+      <tr>
+        <td class="label">Subject:</td>
+        <td class="val">Critical Thinking</td>
+        <td class="label">Professor’s Name:</td>
+        <td class="val">Riddhi Pankhdiwala</td>
+      </tr>
+      <tr>
+        <td class="label">Submission Date:</td>
+        <td class="val" colspan="3">27 October 2026</td>
+      </tr>
+    </table>
+
+    <div class="intro-statement">
+      This assignment applies Edward de Bono’s Six Thinking Hats method to a student-created digital case analysis of an AI-powered exam-preparation app.
+    </div>
+  </header>
+
+  <!-- Section 1: Introduction to Six Thinking Hats -->
+  <section>
+    <h2 class="section-heading">Introduction to Six Thinking Hats</h2>
+    <p>
+      Edward de Bono’s Six Thinking Hats technique is a structured method for thinking about a problem from several different perspectives. Each hat represents a particular type of thinking. Instead of mixing facts, emotions, risks, benefits, ideas, and decisions at the same time, a group considers one perspective at a time.
+    </p>
+    <p>
+      This approach can improve decision-making because it reduces confusion and encourages people to examine both advantages and limitations. It also gives quieter participants a clear way to contribute and helps a group avoid reaching a conclusion based only on enthusiasm, fear, or incomplete evidence.
+    </p>
+    <p>
+      In this assignment, the hats are used to examine an AI-powered exam-preparation app for university students. The method helps separate what is known about the app from what is still uncertain, while also considering student feelings, educational risks, possible benefits, creative improvements, and a responsible implementation process.
+    </p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th style="width: 28%;">Hat</th>
+          <th style="width: 36%;">Meaning</th>
+          <th style="width: 36%;">Relevance to the case</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>White Hat — Facts and Information</strong></td>
+          <td>Focuses on objective facts, evidence, and missing information.</td>
+          <td>Separates the app’s supplied features from evidence that still needs to be collected about learning.</td>
+        </tr>
+        <tr>
+          <td><strong>Red Hat — Feelings and Intuition</strong></td>
+          <td>Expresses emotions, expectations, concerns, and intuitive reactions.</td>
+          <td>Considers how students, educators, and the startup may respond to AI-supported study.</td>
+        </tr>
+        <tr>
+          <td><strong>Black Hat — Caution and Risk</strong></td>
+          <td>Examines drawbacks, limitations, risks, and possible failure points.</td>
+          <td>Tests whether dependence, inaccurate feedback, privacy problems, or unequal access could harm learning.</td>
+        </tr>
+        <tr>
+          <td><strong>Yellow Hat — Benefits and Value</strong></td>
+          <td>Looks for useful outcomes, strengths, and practical value.</td>
+          <td>Explores how personalised practice and timely explanations could support revision.</td>
+        </tr>
+        <tr>
+          <td><strong>Green Hat — Creativity and Ideas</strong></td>
+          <td>Generates alternatives, improvements, and new possibilities.</td>
+          <td>Develops features that encourage attempts, reflection, collaboration, and deeper understanding.</td>
+        </tr>
+        <tr>
+          <td><strong>Blue Hat — Process and Control</strong></td>
+          <td>Organises the thinking process and turns it into an action plan.</td>
+          <td>Sets an evaluation sequence, implementation phases, and a monitored pilot plan.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 2: Chosen Case Scenario -->
+  <section>
+    <h2 class="section-heading">Chosen Case Scenario</h2>
+    <p>
+      An ed-tech startup has launched an AI-powered mobile application for university students. The app creates dynamic quizzes, explains concepts in simple language, tracks weak areas, adapts difficulty according to each student’s performance, and includes an AI chatbot that answers doubts instantly. The app is becoming popular among students. However, educators are concerned that excessive dependence on AI might weaken critical thinking, reduce group learning and peer discussions, and encourage shortcut learning instead of deep conceptual understanding. The central problem is to determine how the app can support effective exam preparation without replacing independent thinking, meaningful learning, and collaboration.
+    </p>
+
+    <h3 class="sub-heading">Problem Being Examined</h3>
+    <p>
+      The problem being examined is how an AI-supported study application can improve exam preparation while preserving independent reasoning, conceptual understanding, meaningful classroom learning, and collaboration with peers.
+    </p>
+
+    <h3 class="sub-heading">Stakeholders</h3>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th style="width: 25%;">Stakeholder</th>
+          <th style="width: 75%;">Interest in the case</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Students</strong></td>
+          <td>Need convenient explanations, useful practice, fair access, and support for genuine learning.</td>
+        </tr>
+        <tr>
+          <td><strong>Educators</strong></td>
+          <td>Need evidence of independent understanding, critical thinking, classroom participation, and responsible use.</td>
+        </tr>
+        <tr>
+          <td><strong>Startup</strong></td>
+          <td>Needs a useful, trusted, sustainable product that supports learning without creating avoidable harm.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="sub-heading">Intended Educational Benefits</h3>
+    <p>
+      The intended benefits include targeted practice, accessible explanations, identification of weak areas, flexible revision, and faster support when a student has a doubt.
+    </p>
+
+    <h3 class="sub-heading">Key Concerns</h3>
+    <p>
+      The main concerns involve weakened critical thinking, reduced collaboration, shallow learning, dependence on instant answers, inaccurate explanations, privacy, and unequal access to technology.
+    </p>
+
+    <h3 class="sub-heading">Central Decision</h3>
+    <p>
+      The central decision is how the app should be designed and used responsibly so that it supports university teaching and revision without replacing independent effort, meaningful learning, or peer collaboration.
+    </p>
+
+    <!-- Section 2.1: Real-World Importance & What This Project Solves -->
+    <h3 class="sub-heading">Real-World Importance: What Problem Is This Project Solving?</h3>
+    <p>
+      Higher education worldwide is experiencing a profound crisis sparked by the unguided proliferation of Generative AI. While 78% of undergraduate students actively use AI assistance during exam revision, more than two-thirds report receiving zero institutional guidance on how to avoid cognitive dependency. This analysis addresses four urgent real-life dilemmas:
+    </p>
+
+    <div class="qa-item">
+      <div class="qa-q">1. Eliminating the "Illusion of Competence" (Fluency Heuristic)</div>
+      <div class="qa-a">
+        In real life, when an AI chatbot delivers articulate, step-by-step explanations, students experience high subjective fluency and assume they have mastered the concept. However, on proctored, invigilated university examinations without AI access, recall drops by up to 43% because the neural pathways required for autonomous problem-solving were never forged. This project redesigns the AI from an answer generator into a Socratic coach enforcing active retrieval.
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">2. Preserving "Productive Struggle" and Intellectual Resilience</div>
+      <div class="qa-a">
+        Cognitive science proves that long-term memory consolidation requires "desirable difficulties"—grappling with ambiguous problem sets, hypothesizing, and debugging errors. Instant AI solvers shortcut this friction, producing graduates who excel at prompt entry but struggle with complex, unstructured workplace challenges.
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">3. Restoring Peer Collaboration and Team Dynamics</div>
+      <div class="qa-a">
+        Studying in isolation with an algorithm damages peer study circles, whiteboard debates, and communicative defense skills. This project introduces Green Hat peer-review tournaments, where students critique and debug each other's AI-generated solutions.
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">4. Ending the Adversarial "Detection Arms Race"</div>
+      <div class="qa-a">
+        Universities have oscillated between unenforceable blanket bans and surveillance software. This project provides a collaborative Blue Hat governance framework: replacing punitive policing with syllabus-verified AI APIs, oral defenses, and multi-stage process portfolios.
+      </div>
+    </div>
+  </section>
+
+  <!-- Hat 1: WHITE HAT -->
+  <section class="hat-section-block">
+    <div class="hat-banner banner-white">
+      1. WHITE HAT — FACTS AND INFORMATION
+    </div>
+
+    <div class="meta-box">
+      <p><strong>Colour cue:</strong> White — objective information and evidence</p>
+      <p><strong>Purpose:</strong> Focus on objective facts, available information, and evidence concerning the AI-powered exam preparation app.</p>
+      <p><strong>Focus:</strong> Examine what is known about the app, what information is missing, and what evidence is needed before deciding whether the app improves learning.</p>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 1: What are the facts we have, and what facts do we still need?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> The supplied facts are that the app provides adaptive or dynamic quizzes, explanations in simple language, weak-area tracking, adjustable difficulty based on performance, and instant assistance through an AI chatbot. The case also states that the app is becoming popular among students. These facts describe the available functions and the context, but they do not prove that the app improves education.</p>
+        <p>Important facts are still missing. The case does not provide evidence about actual learning outcomes, conceptual understanding, long-term retention, student dependence, independent problem-solving, or collaborative learning. It is also not known whether students verify chatbot explanations, whether the difficulty changes are educationally appropriate, or whether students perform better on unfamiliar questions after using the app. The supplied features must therefore be distinguished from unknown results.</p>
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 2: What data should be collected before evaluating the app?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> The evaluation should collect pre-test and post-test scores, delayed assessments after a period of time, and conceptual questions that require explanation rather than simple recall. It should also collect student feedback, chatbot-use frequency, performance on independent problem-solving tasks, and participation in group learning or peer discussions.</p>
+        <p>Test scores alone may not demonstrate deep understanding because a student can improve through memorisation, repeated exposure, or recognition of familiar question patterns. Delayed assessments, unfamiliar applications, reasoning explanations, and independent tasks would provide a more complete picture. The data should be collected carefully and ethically, without inventing or assuming findings before the evaluation takes place.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hat 2: RED HAT -->
+  <section class="hat-section-block">
+    <div class="hat-banner banner-red">
+      2. RED HAT — FEELINGS AND INTUITION
+    </div>
+
+    <div class="meta-box">
+      <p><strong>Colour cue:</strong> Red — feelings, expectations, and intuition</p>
+      <p><strong>Purpose:</strong> Express emotional reactions, concerns, expectations, and intuitive responses without presenting them as factual conclusions.</p>
+      <p><strong>Focus:</strong> Consider how students, educators, and the startup might feel about the app and its effect on university learning.</p>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 1: What is our gut reaction while trying to solve this problem?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> A plausible student reaction may be relief because instant explanations and personalised practice could make difficult subjects feel more approachable. Some students may also feel encouraged when the app identifies weak areas and gives them a clear place to begin revision. At the same time, students may feel anxious when they face difficult topics, or they may be tempted to depend too heavily on instant answers because the fastest option feels safer than struggling with a problem independently.</p>
+        <p>Educators may feel concerned that frequent chatbot assistance could reduce independent thinking and meaningful classroom interaction. They may also feel uncertain about whether successful quiz completion represents genuine understanding. The startup may feel optimistic about the app’s usefulness and popularity, while also feeling pressure to make the product convenient and attractive. These are plausible emotional responses, not universal findings about every student, educator, or company.</p>
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 2: Will we be able to solve it?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> A balanced solution seems achievable if the app is designed to support attempts, reflection, conceptual questions, and collaboration instead of only providing fast answers. Awareness among students, guidance from educators, and clear responsible-use features could help. However, the result will depend on student behaviour, the quality of implementation, the accuracy of the app, access to technology, and whether the proposed safeguards are used consistently. Hope is reasonable, but it should be combined with careful evaluation rather than treated as proof of success.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hat 3: BLACK HAT -->
+  <section class="hat-section-block">
+    <div class="hat-banner banner-black">
+      3. BLACK HAT — CAUTION AND RISK
+    </div>
+
+    <div class="meta-box">
+      <p><strong>Colour cue:</strong> Black — caution, limitations, and risk</p>
+      <p><strong>Purpose:</strong> Identify potential drawbacks, risks, limitations, and reasons why the app might fail to achieve its educational purpose.</p>
+      <p><strong>Focus:</strong> Examine academic dependence, superficial learning, reduced peer interaction, inaccurate explanations, privacy, access, and other relevant risks.</p>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 1: What could go wrong?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> Students could memorise AI-generated answers without understanding the concepts behind them. They might repeatedly request complete solutions without attempting the problem first, allowing the chatbot to replace productive struggle. A student could also accept an incorrect or incomplete explanation because it is written confidently. As a result, the student might perform well on familiar quizzes but poorly on unfamiliar questions that require independent reasoning and application.</p>
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 2: What are the potential obstacles or problems?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> Privacy risks may arise if student performance data, weak areas, or chatbot interactions are collected without clear safeguards. Unequal access to suitable devices, internet connectivity, or paid features could create unfair learning conditions. Inaccurate feedback and overconfidence in AI explanations could mislead students. Reduced peer discussion is another risk because students may study alone and ask the chatbot instead of explaining ideas to one another. It may also be difficult to distinguish genuine understanding from successful quiz completion when evaluation focuses only on immediate scores.</p>
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 3: What are the potential downsides, problems, and risks involved while trying to solve them?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> Excessive restrictions could make the app frustrating or less useful, especially for students who need quick clarification. Poorly designed hints might reveal too much too early, or they might be so vague that learners lose confidence. Monitoring usage too closely could create privacy concerns and make students feel watched rather than supported. Safeguards must therefore be tested with users and educators instead of being assumed to work. The design should seek a practical balance between protection, usefulness, independence, and privacy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hat 4: YELLOW HAT -->
+  <section class="hat-section-block">
+    <div class="hat-banner banner-yellow">
+      4. YELLOW HAT — BENEFITS AND VALUE
+    </div>
+
+    <div class="meta-box">
+      <p><strong>Colour cue:</strong> Yellow — benefits, opportunity, and practical value</p>
+      <p><strong>Purpose:</strong> Focus on positive aspects, educational benefits, and practical value.</p>
+      <p><strong>Focus:</strong> Examine how personalised practice and immediate feedback could support learning when used appropriately.</p>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 1: What are the advantages?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> Adaptive quizzes could offer targeted practice by responding to the student’s performance rather than giving every learner the same sequence of questions. Simplified explanations could help students approach difficult concepts and begin asking more precise questions. Weak-area tracking could guide revision by showing which topics require more attention. These advantages could make study time more organised, especially when a student is unsure how to begin preparing for an examination.</p>
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 2: What is the potential upside?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> The app could support flexible study schedules, self-paced preparation, timely doubt resolution, and repeated practice. Students could identify learning gaps earlier instead of discovering them only during an examination. If used as a supplement, the app could also help students prepare questions before attending class or meeting peers. Its potential value is greatest when convenience is combined with effort, reflection, and verification.</p>
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 3: What value does it create for the case scenario?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> The app could supplement university teaching, help students prepare more systematically, and provide educators with useful learning insights if privacy and accuracy are handled responsibly. It might give students additional practice outside class while allowing educators to focus classroom time on discussion, application, and clarification. These benefits are conditional possibilities, not experimentally demonstrated findings in this assignment. They should be tested through a fair evaluation before broad claims are made.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hat 5: GREEN HAT -->
+  <section class="hat-section-block">
+    <div class="hat-banner banner-green">
+      5. GREEN HAT — CREATIVITY AND IDEAS
+    </div>
+
+    <div class="meta-box">
+      <p><strong>Colour cue:</strong> Green — creativity, alternatives, and improvement</p>
+      <p><strong>Purpose:</strong> Generate original ideas, alternatives, and practical improvements to make the app support deeper learning instead of shortcut learning.</p>
+      <p><strong>Focus:</strong> Develop creative solutions that preserve usefulness while encouraging independent thinking, collaboration, and conceptual understanding.</p>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 1: What new ideas or creative solutions can we generate?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> The following proposals are new recommendations for the case. They are not claims about features already implemented in the supplied scenario.</p>
+        <ol class="proposal-list">
+          <li class="proposal-item"><strong>Think-First Mode:</strong> The app would ask students to attempt a question, record an initial approach, or select a reasoning path before revealing the complete AI-generated solution. This would address the risk of requesting answers without making an effort.</li>
+          <li class="proposal-item"><strong>Progressive Hints:</strong> The app would offer graduated hints, guiding questions, and conceptual clues before showing a final answer. This would preserve support while encouraging students to solve more of the problem independently.</li>
+          <li class="proposal-item"><strong>Explain-Your-Reasoning Mode:</strong> Students would explain why an answer is correct and identify gaps in their reasoning. The app could respond with prompts for clarification rather than immediately replacing the student’s explanation.</li>
+          <li class="proposal-item"><strong>Deep Learning Challenges:</strong> The app would include unfamiliar applications, case-based questions, and problems that cannot be solved through simple memorisation. These activities would address the difference between quiz completion and conceptual understanding.</li>
+          <li class="proposal-item"><strong>Peer Learning Mode:</strong> Collaborative quizzes, group challenges, peer explanations, and discussion prompts would give students structured ways to learn together. This would respond directly to concerns about reduced group learning and peer interaction.</li>
+          <li class="proposal-item"><strong>AI-Free Practice:</strong> Selected sessions would be completed without chatbot assistance. This would help students check whether they can retrieve knowledge, reason, and solve problems independently.</li>
+          <li class="proposal-item"><strong>Reflection Journal:</strong> Students would record mistakes, learning points, and difficult concepts to revisit. This would turn errors into material for reflection instead of encouraging students to move immediately to the next answer.</li>
+          <li class="proposal-item"><strong>Responsible AI Feedback:</strong> The app would encourage students to verify explanations against textbooks, lecture notes, or trusted educational resources. This would address overconfidence in AI-generated content and promote source awareness.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 2: What are some different perspectives?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> Students need convenient support that is available when they study and that explains difficult material clearly. Educators need evidence that students can reason, explain concepts, work with peers, and perform without constant assistance. The startup needs a useful and sustainable product that students value, educators can trust, and institutions can adopt responsibly. A strong design should not treat one perspective as the only priority; it should connect convenience with accountability and learning quality.</p>
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 3: What is our primary plan to solve the case scenario?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> The primary plan is to recommend an enhanced learning app that combines personalised AI assistance with Think-First Mode, progressive hints, independent practice, conceptual assessments, and structured peer learning. The app would help students when support is needed but would delay complete solutions, require reasoning, and create regular opportunities to work without AI assistance.</p>
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 4: What is our alternative plan if the primary plan fails?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> The alternative plan is a blended model in which the app is restricted to guided revision and practice, while faculty-led teaching, peer discussion, and supervised independent assessments remain central. This plan would preserve the supplied capabilities of quizzes, explanations, weak-area tracking, adjustable difficulty, and chatbot assistance in a more limited role. The proposed safeguards and learning modes above must be clearly distinguished from the capabilities already implemented in the case.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hat 6: BLUE HAT -->
+  <section class="hat-section-block">
+    <div class="hat-banner banner-blue">
+      6. BLUE HAT — PROCESS AND CONTROL
+    </div>
+
+    <div class="meta-box">
+      <p><strong>Colour cue:</strong> Blue — organisation, priorities, and control</p>
+      <p><strong>Purpose:</strong> Organise the overall thinking process, set objectives, establish priorities, and reach a practical conclusion.</p>
+      <p><strong>Focus:</strong> Bring together facts, feelings, risks, benefits, and creative proposals to determine how the app should be improved and evaluated.</p>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 1: What is our thinking process?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> The six hats were used systematically. White identified the known features and the evidence still needed. Red considered plausible reactions from students, educators, and the startup. Black examined dependence, shallow learning, privacy, access, inaccurate feedback, and other risks. Yellow recognised the possible value of personalised practice and timely support. Green generated features that could encourage reasoning, reflection, and collaboration. Blue then brought these perspectives together into an action plan and a practical conclusion.</p>
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 2: How should we proceed?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> The following phased implementation is a proposed future plan, not completed work.</p>
+        <ol class="phase-list">
+          <li class="phase-item"><strong>Phase 1:</strong> Establish baseline measures of independent problem-solving and conceptual understanding before introducing the proposed safeguards.</li>
+          <li class="phase-item"><strong>Phase 2:</strong> Introduce Think-First Mode, progressive hints, and independent practice so that students attempt problems before receiving complete assistance.</li>
+          <li class="phase-item"><strong>Phase 3:</strong> Add peer-learning activities and deeper conceptual assessments, including unfamiliar applications and explanation-based tasks.</li>
+          <li class="phase-item"><strong>Phase 4:</strong> Conduct a pilot with willing university students and participating educators, using clear consent and responsible data practices.</li>
+          <li class="phase-item"><strong>Phase 5:</strong> Compare results with baseline measures, review student feedback, check privacy safeguards, and refine the app before considering wider use.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 3: What is the agenda, and what order of hats should we use?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> The agenda is to establish the evidence, understand the human reactions, identify risks, recognise possible value, generate improvements, and choose a controlled action plan. The overall order is White → Red → Black → Yellow → Green → Blue. The Blue Hat coordinates the process by keeping the discussion organised and ensuring that the final decision responds to all the earlier perspectives.</p>
+      </div>
+    </div>
+
+    <div class="qa-item">
+      <div class="qa-q">Question 4: What are the conclusions?</div>
+      <div class="qa-a">
+        <p><strong>Answer:</strong> The app should be treated as a learning aid rather than a replacement for independent effort, classroom teaching, or peer collaboration. A monitored pilot should be completed before broader implementation so that educational outcomes, student experiences, privacy safeguards, and unintended effects can be examined responsibly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Link -->
+  <div class="project-card">
+    <strong>My Website Project: AI-Powered Hat Classification</strong>
+    <a href="https://hatclassification.vercel.app/" target="_blank">https://hatclassification.vercel.app/</a>
+  </div>
+
+  <!-- Final Conclusion -->
+  <section class="hat-section-block">
+    <div class="hat-banner banner-conclusion">
+      Final Conclusion
+    </div>
+
+    <p>
+      The Six Thinking Hats analysis shows that the central issue is not whether AI should be used in education, but how it should be designed and used to encourage genuine understanding. The White Hat separates the supplied app features from the evidence that is still missing. The Red Hat recognises both the relief students may feel and the concerns educators may have. The Black Hat identifies dependence, shallow learning, inaccurate feedback, privacy, access, and reduced collaboration as serious risks. The Yellow Hat shows that personalised practice and immediate support could still provide useful value when used appropriately.
+    </p>
+    <p>
+      The Green Hat proposals offer a balanced direction: AI-supported revision should be combined with Think-First Mode, progressive hints, independent problem-solving, peer collaboration, conceptual assessments, reflection, and verification against trusted educational resources. The Blue Hat provides the control process needed to introduce these ideas carefully rather than assuming that a popular app is automatically effective.
+    </p>
+    <p>
+      The practical recommendation is to test the improved app through a monitored pilot. The evaluation should consider learning outcomes, independent performance, long-term retention, student feedback, peer learning, teacher observations, privacy safeguards, and access. Wider use should be considered only after the evidence shows that the app supports learning without replacing independent effort, teacher involvement, or meaningful collaboration.
+    </p>
+  </section>
+
+</body>
+</html>

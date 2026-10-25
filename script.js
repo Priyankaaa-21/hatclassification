@@ -154,6 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4. Scroll Spy Navigation Highlight
   // -------------------------------------------------------------------------
   const sections = [
+    { id: 'why-this-matters', navLink: document.querySelector('.nav-link[data-hat="impact"]') },
     { id: 'white-hat', navLink: document.querySelector('.nav-link[data-hat="white"]') },
     { id: 'blue-hat', navLink: document.querySelector('.nav-link[data-hat="blue"]') },
     { id: 'red-hat', navLink: document.querySelector('.nav-link[data-hat="red"]') },
@@ -235,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // -------------------------------------------------------------------------
   // 6. Interactive Working Application Features Simulation (Scenario 2 Core)
   // -------------------------------------------------------------------------
-  
+
   // Tab Switcher
   const simTabBtns = document.querySelectorAll('.sim-tab-btn');
   const simPanels = document.querySelectorAll('.sim-panel');
@@ -244,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
     simTabBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
         const targetTabId = btn.getAttribute('data-tab');
-        
+
         simTabBtns.forEach((b) => {
           b.classList.remove('active');
           b.setAttribute('aria-selected', 'false');
@@ -253,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         btn.classList.add('active');
         btn.setAttribute('aria-selected', 'true');
-        
+
         const activePanel = document.getElementById(targetTabId);
         if (activePanel) {
           activePanel.classList.add('active');
@@ -426,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const diffLabels = { 1: 'Level 1 (Easy)', 2: 'Level 2 (Medium)', 3: 'Level 3 (Hard)' };
       const diffClasses = { 1: 'diff-easy', 2: 'diff-medium', 3: 'diff-hard' };
-      
+
       quizDiffText.textContent = diffLabels[currentDifficulty];
       quizDiffText.className = `diff-tag ${diffClasses[currentDifficulty]}`;
 
@@ -871,5 +872,56 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial render
     renderAnalytics();
   }
+
+  // -------------------------------------------------------------------------
+  // 12. Real-World Impact Modal Handling
+  // -------------------------------------------------------------------------
+  const impactBtn = document.getElementById('impact-btn');
+  const impactModal = document.getElementById('impact-modal');
+  const impactModalClose = document.getElementById('impact-modal-close');
+  const impactModalBackdrop = document.getElementById('impact-modal-backdrop');
+  const modalSecondaryClose = document.getElementById('modal-secondary-close');
+  const modalJumpSection = document.getElementById('modal-jump-section');
+
+  function openImpactModal() {
+    if (impactModal) {
+      impactModal.classList.add('open');
+      impactModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      if (impactModalClose) impactModalClose.focus();
+    }
+  }
+
+  function closeImpactModal() {
+    if (impactModal) {
+      impactModal.classList.remove('open');
+      impactModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (impactBtn) impactBtn.focus();
+    }
+  }
+
+  if (impactBtn) {
+    impactBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openImpactModal();
+    });
+  }
+
+  if (impactModalClose) impactModalClose.addEventListener('click', closeImpactModal);
+  if (modalSecondaryClose) modalSecondaryClose.addEventListener('click', closeImpactModal);
+  if (impactModalBackdrop) impactModalBackdrop.addEventListener('click', closeImpactModal);
+
+  if (modalJumpSection) {
+    modalJumpSection.addEventListener('click', () => {
+      closeImpactModal();
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && impactModal && impactModal.classList.contains('open')) {
+      closeImpactModal();
+    }
+  });
 });
 

@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Six Thinking Hats: Scenario 2 - AI-Powered Exam Preparation App</title>
-  <meta name="description" content="A comprehensive Six Thinking Hats analysis of Scenario 2: AI-Powered Exam Preparation App for University Students.">
+  <meta name="description"
+    content="A comprehensive Six Thinking Hats analysis of Scenario 2: AI-Powered Exam Preparation App for University Students.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <!-- Scroll Progress Indicator -->
@@ -25,7 +28,8 @@
         <span class="brand-title">Six Thinking Hats</span>
       </a>
 
-      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav"
+        aria-label="Toggle navigation menu">
         <span class="hamburger-bar"></span>
         <span class="hamburger-bar"></span>
         <span class="hamburger-bar"></span>
@@ -75,11 +79,26 @@
               <span>Conclusion</span>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="#why-this-matters" class="nav-link" data-hat="impact">
+              <span class="nav-dot dot-impact" aria-hidden="true"></span>
+              <span>Why It Matters</span>
+            </a>
+          </li>
         </ul>
 
         <div class="nav-actions">
-          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark mode" title="Toggle theme">
-            <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <button id="impact-btn" class="nav-impact-btn" aria-haspopup="dialog" aria-controls="impact-modal"
+            title="Why this website is important &amp; what it solves in real life">
+            <span class="impact-pill-pulse" aria-hidden="true"></span>
+            <span class="impact-pill-icon" aria-hidden="true">💡</span>
+            <span class="impact-pill-text">Why This Matters</span>
+            <span class="impact-pill-badge">Real-World Impact</span>
+          </button>
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark mode"
+            title="Toggle theme">
+            <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <circle cx="12" cy="12" r="5"></circle>
               <line x1="12" y1="1" x2="12" y2="3"></line>
               <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -90,7 +109,8 @@
               <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
               <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
             </svg>
-            <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
           </button>
@@ -116,21 +136,27 @@
 
         <div class="scenario-card reveal">
           <div class="scenario-badge">
-            <svg class="scenario-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <svg class="scenario-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
               <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
             </svg>
             <span>Case Scenario</span>
           </div>
           <p class="scenario-text">
-            An ed-tech startup has launched an AI-based mobile app that creates dynamic quizzes, explains concepts in simple terms, tracks weak areas, and adapts difficulty per student. It also has an AI chatbot that answers doubts instantly. It is gaining popularity among students, but educators worry it might reduce critical thinking, group learning, and promote shortcut learning over deep understanding.
+            An ed-tech startup has launched an AI-based mobile app that creates dynamic quizzes, explains concepts in
+            simple terms, tracks weak areas, and adapts difficulty per student. It also has an AI chatbot that answers
+            doubts instantly. It is gaining popularity among students, but educators worry it might reduce critical
+            thinking, group learning, and promote shortcut learning over deep understanding.
           </p>
 
           <!-- Key Scenario Features Breakdown -->
           <div class="scenario-features-wrapper">
             <div class="scenario-features-header">
-              <svg class="feature-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              <svg class="feature-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
               </svg>
               <h3 class="scenario-features-title">Core Scenario Features:</h3>
             </div>
@@ -139,47 +165,310 @@
                 <div class="feature-badge">1</div>
                 <div class="feature-body">
                   <h4 class="feature-name">Dynamic Quizzes</h4>
-                  <p class="feature-desc">AI-generated quizzes tailored dynamically to reinforce retention and test comprehension.</p>
+                  <p class="feature-desc">AI-generated quizzes tailored dynamically to reinforce retention and test
+                    comprehension.</p>
                 </div>
               </div>
               <div class="scenario-feature-card">
                 <div class="feature-badge">2</div>
                 <div class="feature-body">
                   <h4 class="feature-name">Simple Concept Explanations</h4>
-                  <p class="feature-desc">Translates difficult syllabus topics into clear, intuitive explanations for all learners.</p>
+                  <p class="feature-desc">Translates difficult syllabus topics into clear, intuitive explanations for
+                    all learners.</p>
                 </div>
               </div>
               <div class="scenario-feature-card">
                 <div class="feature-badge">3</div>
                 <div class="feature-body">
                   <h4 class="feature-name">Weak Area Tracking</h4>
-                  <p class="feature-desc">Continuous performance diagnostics identifying individual knowledge gaps and revision needs.</p>
+                  <p class="feature-desc">Continuous performance diagnostics identifying individual knowledge gaps and
+                    revision needs.</p>
                 </div>
               </div>
               <div class="scenario-feature-card">
                 <div class="feature-badge">4</div>
                 <div class="feature-body">
                   <h4 class="feature-name">Adaptive Difficulty</h4>
-                  <p class="feature-desc">Real-time calibration of question complexity based on individual student mastery levels.</p>
+                  <p class="feature-desc">Real-time calibration of question complexity based on individual student
+                    mastery levels.</p>
                 </div>
               </div>
               <div class="scenario-feature-card">
                 <div class="feature-badge">5</div>
                 <div class="feature-body">
                   <h4 class="feature-name">Instant AI Doubt Chatbot</h4>
-                  <p class="feature-desc">24/7 conversational assistant clearing academic queries and doubts immediately.</p>
+                  <p class="feature-desc">24/7 conversational assistant clearing academic queries and doubts
+                    immediately.</p>
                 </div>
               </div>
               <div class="scenario-feature-card">
                 <div class="feature-badge">6</div>
                 <div class="feature-body">
                   <h4 class="feature-name">Popularity vs. Pedagogical Concern</h4>
-                  <p class="feature-desc">High student demand contrasted with faculty concerns on critical thinking & teamwork loss.</p>
+                  <p class="feature-desc">High student demand contrasted with faculty concerns on critical thinking &
+                    teamwork loss.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Section: Why This Website & Analysis Matters in Real Life -->
+        <section id="why-this-matters" class="impact-section reveal" aria-labelledby="heading-why-this-matters">
+          <div class="impact-banner">
+            <div class="impact-badge">
+              <span class="impact-star-icon" aria-hidden="true">🌟</span>
+              <span>Real-World Significance &amp; Problem-Solving Matrix</span>
+            </div>
+            <h2 id="heading-why-this-matters" class="impact-title">Why This Website &amp; Analysis Matters</h2>
+            <p class="impact-subtitle">
+              Higher education is navigating an unprecedented crisis: the friction between instantaneous AI convenience
+              and authentic human cognitive mastery. This project uses Edward de Bono's Six Thinking Hats to solve the
+              real-life dilemmas of the AI exam preparation revolution.
+            </p>
+          </div>
+
+          <!-- Highlight Metric Banners -->
+          <div class="impact-stats-grid">
+            <div class="impact-stat-card">
+              <span class="stat-number stat-highlight-blue">78%</span>
+              <span class="stat-title">Student AI Adoption Rate</span>
+              <p class="stat-desc">More than three-quarters of university students use GenAI tools for exam prep, yet 68% report receiving zero institutional guidance.</p>
+            </div>
+            <div class="impact-stat-card">
+              <span class="stat-number stat-highlight-red">43%</span>
+              <span class="stat-title">Exam Performance Drop</span>
+              <p class="stat-desc">Cognitive science shows up to 43% lower recall on invigilated exams when students rely on AI answers without active generation.</p>
+            </div>
+            <div class="impact-stat-card">
+              <span class="stat-number stat-highlight-amber">12-14%</span>
+              <span class="stat-title">Technical Hallucination Rate</span>
+              <p class="stat-desc">Uncalibrated LLMs fabricate plausible but subtly incorrect formulas and citations, embedding silent misconceptions before exams.</p>
+            </div>
+            <div class="impact-stat-card">
+              <span class="stat-number stat-highlight-green">360°</span>
+              <span class="stat-title">Holistic Solution Matrix</span>
+              <p class="stat-desc">De Bono's framework bridges the bitter divide between student demand, faculty integrity, and ethical software engineering.</p>
+            </div>
+          </div>
+
+          <!-- The Real-Life Crises Solved -->
+          <div class="impact-block">
+            <div class="impact-block-header">
+              <div class="block-icon-badge badge-warning">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                  <line x1="12" y1="9" x2="12" y2="13"></line>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="impact-block-title">The Real-Life Crises This Project Addresses</h3>
+                <p class="impact-block-subtitle">What happens when AI exam apps proliferate in university ecosystems without rigorous cognitive governance?</p>
+              </div>
+            </div>
+
+            <div class="crisis-cards-grid">
+              <!-- Crisis 1 -->
+              <div class="crisis-card">
+                <div class="crisis-card-top">
+                  <span class="crisis-tag tag-urgent">Crisis 1: Cognitive Failure</span>
+                  <span class="crisis-label">The "Illusion of Competence"</span>
+                </div>
+                <div class="crisis-body">
+                  <div class="crisis-point">
+                    <strong class="point-label text-danger">Real-Life Trap:</strong>
+                    <p>When an AI doubt bot effortlessly explains a tough theorem or writes a clean code snippet, the student feels instant clarity. This "fluency heuristic" tricks the brain into assuming <em>"I know this concept."</em></p>
+                  </div>
+                  <div class="crisis-point">
+                    <strong class="point-label text-primary">Exam Reality:</strong>
+                    <p>In closed-book, proctored university exams without AI, students face cognitive blankness. Because the AI did the heavy intellectual lifting, the neural pathways for autonomous problem solving were never forged.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Crisis 2 -->
+              <div class="crisis-card">
+                <div class="crisis-card-top">
+                  <span class="crisis-tag tag-warning">Crisis 2: Pedagogical Loss</span>
+                  <span class="crisis-label">Death of "Productive Struggle"</span>
+                </div>
+                <div class="crisis-body">
+                  <div class="crisis-point">
+                    <strong class="point-label text-danger">Real-Life Trap:</strong>
+                    <p>True learning relies on "desirable difficulties"—wrestling with ambiguous problems, formulating hypotheses, making errors, and self-correcting. Instant AI solvers eliminate this cognitive friction entirely.</p>
+                  </div>
+                  <div class="crisis-point">
+                    <strong class="point-label text-primary">Long-Term Cost:</strong>
+                    <p>Graduates lose intellectual resilience, critical reasoning stamina, and the ability to debug unstructured real-world challenges where there is no AI prompt box with pre-cooked answers.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Crisis 3 -->
+              <div class="crisis-card">
+                <div class="crisis-card-top">
+                  <span class="crisis-tag tag-social">Crisis 3: Social Disconnect</span>
+                  <span class="crisis-label">Erosion of Peer Collaboration</span>
+                </div>
+                <div class="crisis-body">
+                  <div class="crisis-point">
+                    <strong class="point-label text-danger">Real-Life Trap:</strong>
+                    <p>Instead of gathering in study circles, defending arguments on whiteboards, and learning from classmates' diverse perspectives, students work in silos with a solitary AI bot that always validates them.</p>
+                  </div>
+                  <div class="crisis-point">
+                    <strong class="point-label text-primary">Workplace Impact:</strong>
+                    <p>Industry recruiters report engineering graduates who excel at solitary prompt generation but struggle severely in team discussions, code reviews, and verbal technical defense.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Crisis 4 -->
+              <div class="crisis-card">
+                <div class="crisis-card-top">
+                  <span class="crisis-tag tag-policy">Crisis 4: Academic Warfare</span>
+                  <span class="crisis-label">The "Detection Arms Race" Impasse</span>
+                </div>
+                <div class="crisis-body">
+                  <div class="crisis-point">
+                    <strong class="point-label text-danger">Real-Life Trap:</strong>
+                    <p>Universities respond with flawed AI detection software and blanket bans. Students bypass detectors with paraphrasing tools. Faculty become detectives; students become evasive. Mutual trust collapses.</p>
+                  </div>
+                  <div class="crisis-point">
+                    <strong class="point-label text-primary">Constructive Solution:</strong>
+                    <p>Moving away from punitive detection toward "AI-resilient assessments"—oral defenses, multi-stage process portfolios, and guided Socratic AI usage sanctioned by university policy.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- How This Framework Solves It -->
+          <div class="impact-block">
+            <div class="impact-block-header">
+              <div class="block-icon-badge badge-success">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 16v-4"></path>
+                  <path d="M12 8h.01"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="impact-block-title">How Six Thinking Hats Delivers the Real-World Solution</h3>
+                <p class="impact-block-subtitle">Translating Edward de Bono's 6 cognitive modes into actionable educational and software engineering breakthroughs</p>
+              </div>
+            </div>
+
+            <div class="hat-solutions-grid">
+              <div class="hat-solution-item item-white">
+                <div class="solution-hat-header">
+                  <span class="solution-hat-dot dot-white"></span>
+                  <h4>White Hat: Data-Driven Calibration</h4>
+                </div>
+                <p>Replaces emotional assumptions with verifiable data: tracking student error logs, measuring retention half-lives, and quantifying hallucination rates across syllabus subjects.</p>
+              </div>
+
+              <div class="hat-solution-item item-blue">
+                <div class="solution-hat-header">
+                  <span class="solution-hat-dot dot-blue"></span>
+                  <h4>Blue Hat: Institutional Governance</h4>
+                </div>
+                <p>Establishes clear rules of engagement: phased campus rollouts, syllabus API integration, and audit committees ensuring AI serves as a tutor rather than a ghostwriter.</p>
+              </div>
+
+              <div class="hat-solution-item item-red">
+                <div class="solution-hat-header">
+                  <span class="solution-hat-dot dot-red"></span>
+                  <h4>Red Hat: Empathy &amp; Emotional Safety</h4>
+                </div>
+                <p>Validates the genuine psychological panic of exam stress, imposter syndrome, and faculty burnout, designing features that build confidence without fostering dependency.</p>
+              </div>
+
+              <div class="hat-solution-item item-black">
+                <div class="solution-hat-header">
+                  <span class="solution-hat-dot dot-black"></span>
+                  <h4>Black Hat: Proactive Vulnerability Defense</h4>
+                </div>
+                <p>Anticipates worst-case scenarios: data privacy leaks (DPDP/FERPA compliance), subscription paywalls creating socioeconomic equity divides, and prompt injection exploits.</p>
+              </div>
+
+              <div class="hat-solution-item item-yellow">
+                <div class="solution-hat-header">
+                  <span class="solution-hat-dot dot-yellow"></span>
+                  <h4>Yellow Hat: Value Maximization</h4>
+                </div>
+                <p>Harnesses the legitimate superpowers of AI: 24/7 patient explanations for non-traditional students, multimodal aids for neurodivergent learners, and personalized pacing.</p>
+              </div>
+
+              <div class="hat-solution-item item-green">
+                <div class="solution-hat-header">
+                  <span class="solution-hat-dot dot-green"></span>
+                  <h4>Green Hat: Architectural Breakthroughs</h4>
+                </div>
+                <p>Innovates practical product redesigns: Socratic questioning mode, exam-mode 72-hour answer lockouts, collaborative peer-review tournaments, and verified university syllabus alignment.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Real-Life Stakeholder Impact -->
+          <div class="impact-block">
+            <div class="impact-block-header">
+              <div class="block-icon-badge badge-primary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="impact-block-title">Who Wins in Real Life? (Stakeholder Value Matrix)</h3>
+                <p class="impact-block-subtitle">Concrete outcomes created for each critical group in the academic ecosystem</p>
+              </div>
+            </div>
+
+            <div class="stakeholder-cards-grid">
+              <!-- Students -->
+              <div class="stakeholder-card">
+                <div class="stakeholder-icon">🎓</div>
+                <h4 class="stakeholder-title">University Students</h4>
+                <span class="stakeholder-role">From Cheating Anxiety to Real Mastery</span>
+                <ul class="stakeholder-list">
+                  <li><strong>Active Neural Retrieval:</strong> Replaces passive copy-paste with Socratic prompt interactions that cement memory.</li>
+                  <li><strong>True Exam Readiness:</strong> Timed simulated quizzes eliminate the panic of unseen, invigilated test formats.</li>
+                  <li><strong>Targeted Revision:</strong> Diagnostic weak-area analytics cut wasted study time by up to 35%.</li>
+                  <li><strong>Future Career Readiness:</strong> Learns to orchestrate and audit AI outputs—the exact skill demanded by top employers.</li>
+                </ul>
+              </div>
+
+              <!-- Faculty -->
+              <div class="stakeholder-card">
+                <div class="stakeholder-icon">🏛️</div>
+                <h4 class="stakeholder-title">Professors &amp; Universities</h4>
+                <span class="stakeholder-role">From Adversarial Policing to Collaborative Pedagogy</span>
+                <ul class="stakeholder-list">
+                  <li><strong>End of Detection Battles:</strong> Shifts assessment focus to oral defenses, synthesis projects, and in-class problem solving.</li>
+                  <li><strong>Syllabus Alignment:</strong> Direct API hooks allow professors to upload verified textbook references, preventing hallucinations.</li>
+                  <li><strong>Cohort Learning Analytics:</strong> Professors receive aggregate heatmaps of topics where their entire class struggles most.</li>
+                  <li><strong>Protecting Degree Value:</strong> Maintains rigorous accreditation standards without resorting to obsolete bans.</li>
+                </ul>
+              </div>
+
+              <!-- EdTech -->
+              <div class="stakeholder-card">
+                <div class="stakeholder-icon">🚀</div>
+                <h4 class="stakeholder-title">EdTech Developers &amp; Startups</h4>
+                <span class="stakeholder-role">From Superficial Apps to Enduring Educational Infrastructure</span>
+                <ul class="stakeholder-list">
+                  <li><strong>Pedagogical Product Design:</strong> Builds apps students love and universities willingly endorse and license.</li>
+                  <li><strong>Ethical Guardrails:</strong> Built-in anti-cheat cooldown timers and prompt safety filters protect against legal liabilities.</li>
+                  <li><strong>Proven Educational Efficacy:</strong> Focuses on measurable grade improvements and retention rather than empty engagement hacks.</li>
+                  <li><strong>B2B Enterprise Viability:</strong> Unlocks multi-campus enterprise licensing agreements with major universities.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!-- Interactive Working Application Features Simulation -->
         <section id="app-simulation" class="app-simulation-card reveal" aria-labelledby="sim-title">
@@ -203,10 +492,12 @@
               <button class="sim-tab-btn" role="tab" aria-selected="false" data-tab="tab-chatbot" id="tab-btn-chatbot">
                 <span class="tab-icon">🤖</span> AI Doubt Chatbot
               </button>
-              <button class="sim-tab-btn" role="tab" aria-selected="false" data-tab="tab-simplifier" id="tab-btn-simplifier">
+              <button class="sim-tab-btn" role="tab" aria-selected="false" data-tab="tab-simplifier"
+                id="tab-btn-simplifier">
                 <span class="tab-icon">💡</span> Concept Simplifier
               </button>
-              <button class="sim-tab-btn" role="tab" aria-selected="false" data-tab="tab-analytics" id="tab-btn-analytics">
+              <button class="sim-tab-btn" role="tab" aria-selected="false" data-tab="tab-analytics"
+                id="tab-btn-analytics">
                 <span class="tab-icon">📊</span> Weak Area Tracker
               </button>
             </div>
@@ -246,9 +537,12 @@
                 </div>
 
                 <div class="quiz-actions-footer">
-                  <button id="quiz-next-btn" class="sim-btn sim-btn-primary" style="display: none;">Next Adaptive Question &rarr;</button>
-                  <button id="quiz-restart-btn" class="sim-btn sim-btn-outline" style="display: none;">Restart Quiz</button>
-                  <span id="quiz-adaptive-notice" class="quiz-adaptive-notice">Difficulty adapts dynamically after each answer.</span>
+                  <button id="quiz-next-btn" class="sim-btn sim-btn-primary" style="display: none;">Next Adaptive
+                    Question &rarr;</button>
+                  <button id="quiz-restart-btn" class="sim-btn sim-btn-outline" style="display: none;">Restart
+                    Quiz</button>
+                  <span id="quiz-adaptive-notice" class="quiz-adaptive-notice">Difficulty adapts dynamically after each
+                    answer.</span>
                 </div>
               </div>
             </div>
@@ -265,7 +559,8 @@
                     </div>
                   </div>
                   <div class="chat-mode-toggle">
-                    <label class="toggle-switch-label" title="Enable Socratic hints first before giving full answers (Green Hat Primary Plan recommendation)">
+                    <label class="toggle-switch-label"
+                      title="Enable Socratic hints first before giving full answers (Green Hat Primary Plan recommendation)">
                       <input type="checkbox" id="socratic-hint-toggle">
                       <span class="toggle-slider"></span>
                       <span class="toggle-text">Socratic Mode (Hints First)</span>
@@ -276,21 +571,26 @@
                 <div class="chat-messages-container" id="chat-messages-container">
                   <div class="chat-msg msg-ai">
                     <div class="msg-bubble">
-                      Hello! I'm your university exam preparation assistant. Ask me any doubt about your syllabus, or choose one of the quick topics below!
+                      Hello! I'm your university exam preparation assistant. Ask me any doubt about your syllabus, or
+                      choose one of the quick topics below!
                     </div>
                   </div>
                 </div>
 
                 <div class="chat-prompts-bar">
                   <span class="prompts-label">Quick Doubts:</span>
-                  <button class="quick-prompt-btn" data-query="Explain Deadlock in Operating Systems">Deadlock in OS</button>
+                  <button class="quick-prompt-btn" data-query="Explain Deadlock in Operating Systems">Deadlock in
+                    OS</button>
                   <button class="quick-prompt-btn" data-query="Difference between TCP and UDP">TCP vs UDP</button>
-                  <button class="quick-prompt-btn" data-query="What is Database Normalization (1NF, 2NF, 3NF)?">Database Normalization</button>
-                  <button class="quick-prompt-btn" data-query="How does Binary Search work and what is its time complexity?">Binary Search</button>
+                  <button class="quick-prompt-btn" data-query="What is Database Normalization (1NF, 2NF, 3NF)?">Database
+                    Normalization</button>
+                  <button class="quick-prompt-btn"
+                    data-query="How does Binary Search work and what is its time complexity?">Binary Search</button>
                 </div>
 
                 <form id="chat-input-form" class="chat-input-bar">
-                  <input type="text" id="chat-text-input" placeholder="Type your doubt here (e.g., What is Virtual Memory?)..." autocomplete="off" required>
+                  <input type="text" id="chat-text-input"
+                    placeholder="Type your doubt here (e.g., What is Virtual Memory?)..." autocomplete="off" required>
                   <button type="submit" class="chat-send-btn" aria-label="Send message">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                       <line x1="22" y1="2" x2="11" y2="13"></line>
@@ -318,7 +618,8 @@
                   <div class="input-or">or enter your own:</div>
                   <div class="input-group flex-1">
                     <label for="custom-concept-input" class="control-label">Custom Topic:</label>
-                    <input type="text" id="custom-concept-input" class="sim-text-input" placeholder="e.g. Recursion, B-Trees, Polymorphism...">
+                    <input type="text" id="custom-concept-input" class="sim-text-input"
+                      placeholder="e.g. Recursion, B-Trees, Polymorphism...">
                   </div>
                   <button id="simplify-btn" class="sim-btn sim-btn-primary">Explain Concept Simply</button>
                 </div>
@@ -329,7 +630,8 @@
                       <span class="simp-icon">🍕</span>
                       <h4>Everyday Analogy (ELI5)</h4>
                     </div>
-                    <p id="simp-analogy-text" class="simp-card-body">Select a concept and click 'Explain Concept Simply' to generate an intuitive breakdown.</p>
+                    <p id="simp-analogy-text" class="simp-card-body">Select a concept and click 'Explain Concept Simply'
+                      to generate an intuitive breakdown.</p>
                   </div>
 
                   <div class="simp-card card-mechanism">
@@ -357,11 +659,14 @@
                 <div class="analytics-header">
                   <div>
                     <h3 class="analytics-title">Student Diagnostic Mastery Dashboard</h3>
-                    <p class="analytics-desc">Real-time performance metrics tracking weak topics across syllabus modules:</p>
+                    <p class="analytics-desc">Real-time performance metrics tracking weak topics across syllabus
+                      modules:</p>
                   </div>
                   <div class="analytics-actions">
-                    <button id="simulate-revision-btn" class="sim-btn sim-btn-sm sim-btn-primary">Simulate Revision Session</button>
-                    <button id="reset-analytics-btn" class="sim-btn sim-btn-sm sim-btn-outline">Reset Diagnostic Data</button>
+                    <button id="simulate-revision-btn" class="sim-btn sim-btn-sm sim-btn-primary">Simulate Revision
+                      Session</button>
+                    <button id="reset-analytics-btn" class="sim-btn sim-btn-sm sim-btn-outline">Reset Diagnostic
+                      Data</button>
                   </div>
                 </div>
 
@@ -374,7 +679,9 @@
                   <div class="rec-content">
                     <h4 class="rec-title">AI Revision Advisory:</h4>
                     <p class="rec-text" id="analytics-rec-text">
-                      High priority: Operating Systems (Process Synchronization) and Computer Networks (Subnetting) require targeted study. Consider organizing a peer-teaching study group before proceeding to mock exams.
+                      High priority: Operating Systems (Process Synchronization) and Computer Networks (Subnetting)
+                      require targeted study. Consider organizing a peer-teaching study group before proceeding to mock
+                      exams.
                     </p>
                   </div>
                 </div>
@@ -394,9 +701,12 @@
           <a href="#white-hat" class="hat-circle-btn hat-btn-white" aria-label="Jump to 1. White Hat">
             <span class="hat-circle-bubble">
               <svg class="hat-circle-svg" viewBox="0 0 64 48" aria-hidden="true">
-                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="2"/>
-                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2"/>
-                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#9CA3AF"/>
+                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z"
+                  fill="#E5E7EB" stroke="#9CA3AF" stroke-width="2" />
+                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#F3F4F6" stroke="#9CA3AF"
+                  stroke-width="2" />
+                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z"
+                  fill="#9CA3AF" />
               </svg>
             </span>
             <span class="hat-circle-label">White Hat</span>
@@ -405,9 +715,11 @@
           <a href="#blue-hat" class="hat-circle-btn hat-btn-blue" aria-label="Jump to 2. Blue Hat">
             <span class="hat-circle-bubble">
               <svg class="hat-circle-svg" viewBox="0 0 64 48" aria-hidden="true">
-                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#2563EB"/>
-                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#3B82F6"/>
-                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#1D4ED8"/>
+                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z"
+                  fill="#2563EB" />
+                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#3B82F6" />
+                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z"
+                  fill="#1D4ED8" />
               </svg>
             </span>
             <span class="hat-circle-label">Blue Hat</span>
@@ -416,9 +728,11 @@
           <a href="#red-hat" class="hat-circle-btn hat-btn-red" aria-label="Jump to 3. Red Hat">
             <span class="hat-circle-bubble">
               <svg class="hat-circle-svg" viewBox="0 0 64 48" aria-hidden="true">
-                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#DC2626"/>
-                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#EF4444"/>
-                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#991B1B"/>
+                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z"
+                  fill="#DC2626" />
+                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#EF4444" />
+                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z"
+                  fill="#991B1B" />
               </svg>
             </span>
             <span class="hat-circle-label">Red Hat</span>
@@ -427,9 +741,11 @@
           <a href="#black-hat" class="hat-circle-btn hat-btn-black" aria-label="Jump to 4. Black Hat">
             <span class="hat-circle-bubble">
               <svg class="hat-circle-svg" viewBox="0 0 64 48" aria-hidden="true">
-                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#111827"/>
-                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#1F2937"/>
-                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#374151"/>
+                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z"
+                  fill="#111827" />
+                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#1F2937" />
+                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z"
+                  fill="#374151" />
               </svg>
             </span>
             <span class="hat-circle-label">Black Hat</span>
@@ -438,9 +754,11 @@
           <a href="#yellow-hat" class="hat-circle-btn hat-btn-yellow" aria-label="Jump to 5. Yellow Hat">
             <span class="hat-circle-bubble">
               <svg class="hat-circle-svg" viewBox="0 0 64 48" aria-hidden="true">
-                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#EAB308"/>
-                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#FACC15"/>
-                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#CA8A04"/>
+                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z"
+                  fill="#EAB308" />
+                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#FACC15" />
+                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z"
+                  fill="#CA8A04" />
               </svg>
             </span>
             <span class="hat-circle-label">Yellow Hat</span>
@@ -449,9 +767,11 @@
           <a href="#green-hat" class="hat-circle-btn hat-btn-green" aria-label="Jump to 6. Green Hat">
             <span class="hat-circle-bubble">
               <svg class="hat-circle-svg" viewBox="0 0 64 48" aria-hidden="true">
-                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#16A34A"/>
-                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#22C55E"/>
-                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#15803D"/>
+                <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z"
+                  fill="#16A34A" />
+                <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#22C55E" />
+                <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z"
+                  fill="#15803D" />
               </svg>
             </span>
             <span class="hat-circle-label">Green Hat</span>
@@ -466,10 +786,13 @@
         <div class="content-wrapper header-band-content">
           <div class="hat-icon-wrapper">
             <svg class="hat-main-svg" viewBox="0 0 64 48" aria-hidden="true">
-              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="2"/>
-              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#F9FAFB" stroke="#9CA3AF" stroke-width="2"/>
-              <path d="M25 10C29 13 35 13 39 10" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
-              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#D1D5DB"/>
+              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z"
+                fill="#E5E7EB" stroke="#9CA3AF" stroke-width="2" />
+              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#F9FAFB" stroke="#9CA3AF"
+                stroke-width="2" />
+              <path d="M25 10C29 13 35 13 39 10" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" />
+              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z"
+                fill="#D1D5DB" />
             </svg>
           </div>
           <div class="hat-title-group">
@@ -484,7 +807,10 @@
         <div class="purpose-focus-card reveal">
           <div class="pf-block">
             <span class="pf-label">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 16 12 12 8"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+              </svg>
               Purpose
             </span>
             <p class="pf-text">To focus on objective information, data, and facts related to the problem.</p>
@@ -492,7 +818,10 @@
           <div class="pf-divider" aria-hidden="true"></div>
           <div class="pf-block">
             <span class="pf-label">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
               Focus
             </span>
             <p class="pf-text">What do we know about the case scenario? What information is missing?</p>
@@ -506,7 +835,8 @@
         <!-- Facts We Have Group -->
         <div class="subsection-group reveal">
           <div class="subsection-banner">
-            <svg class="sub-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <svg class="sub-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
               <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
               <polyline points="22 4 12 14.01 9 11.01"></polyline>
             </svg>
@@ -557,7 +887,8 @@
               <div class="card-badge">6</div>
               <div class="card-content">
                 <h5 class="card-heading">Educator Concerns</h5>
-                <p class="card-text">Educators worry it may reduce critical thinking and group learning, and promote shortcut learning over deep understanding.</p>
+                <p class="card-text">Educators worry it may reduce critical thinking and group learning, and promote
+                  shortcut learning over deep understanding.</p>
               </div>
             </article>
           </div>
@@ -566,7 +897,8 @@
         <!-- Facts We Still Need Group -->
         <div class="subsection-group reveal">
           <div class="subsection-banner">
-            <svg class="sub-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <svg class="sub-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
               <circle cx="12" cy="12" r="10"></circle>
               <line x1="12" y1="16" x2="12" y2="12"></line>
               <line x1="12" y1="8" x2="12.01" y2="8"></line>
@@ -618,7 +950,8 @@
               <div class="card-badge">6</div>
               <div class="card-content">
                 <h5 class="card-heading">Study Time Balance</h5>
-                <p class="card-text">How much time do students spend on it, and do they use it alongside textbooks and classes?</p>
+                <p class="card-text">How much time do students spend on it, and do they use it alongside textbooks and
+                  classes?</p>
               </div>
             </article>
 
@@ -640,10 +973,12 @@
         <div class="content-wrapper header-band-content">
           <div class="hat-icon-wrapper">
             <svg class="hat-main-svg" viewBox="0 0 64 48" aria-hidden="true">
-              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#1D4ED8"/>
-              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#2563EB"/>
-              <path d="M25 10C29 13 35 13 39 10" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
-              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#1E40AF"/>
+              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z"
+                fill="#1D4ED8" />
+              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#2563EB" />
+              <path d="M25 10C29 13 35 13 39 10" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" />
+              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z"
+                fill="#1E40AF" />
             </svg>
           </div>
           <div class="hat-title-group">
@@ -658,15 +993,22 @@
         <div class="purpose-focus-card reveal">
           <div class="pf-block">
             <span class="pf-label">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 16 12 12 8"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+              </svg>
               Purpose
             </span>
-            <p class="pf-text">To manage and organize the thinking process, set objectives, and keep the discussion on track.</p>
+            <p class="pf-text">To manage and organize the thinking process, set objectives, and keep the discussion on
+              track.</p>
           </div>
           <div class="pf-divider" aria-hidden="true"></div>
           <div class="pf-block">
             <span class="pf-label">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
               Focus
             </span>
             <p class="pf-text">What is the agenda? What is the order of the hats? What are the conclusions?</p>
@@ -689,7 +1031,8 @@
             <span>Agenda</span>
           </div>
           <p class="agenda-text">
-            To decide whether, and how, students and educators should use the AI exam preparation app without losing critical thinking, group learning, and deep understanding.
+            To decide whether, and how, students and educators should use the AI exam preparation app without losing
+            critical thinking, group learning, and deep understanding.
           </p>
         </div>
 
@@ -773,10 +1116,12 @@
         <div class="content-wrapper header-band-content">
           <div class="hat-icon-wrapper">
             <svg class="hat-main-svg" viewBox="0 0 64 48" aria-hidden="true">
-              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#991B1B"/>
-              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#DC2626"/>
-              <path d="M25 10C29 13 35 13 39 10" stroke="#F87171" stroke-width="2" stroke-linecap="round"/>
-              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#7F1D1D"/>
+              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z"
+                fill="#991B1B" />
+              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#DC2626" />
+              <path d="M25 10C29 13 35 13 39 10" stroke="#F87171" stroke-width="2" stroke-linecap="round" />
+              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z"
+                fill="#7F1D1D" />
             </svg>
           </div>
           <div class="hat-title-group">
@@ -791,7 +1136,10 @@
         <div class="purpose-focus-card reveal">
           <div class="pf-block">
             <span class="pf-label">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 16 12 12 8"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+              </svg>
               Purpose
             </span>
             <p class="pf-text">To express gut feelings, emotions, and intuition without needing to justify them.</p>
@@ -799,7 +1147,10 @@
           <div class="pf-divider" aria-hidden="true"></div>
           <div class="pf-block">
             <span class="pf-label">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
               Focus
             </span>
             <p class="pf-text">How do we feel about this case scenario? Will I be able to solve it?</p>
@@ -815,15 +1166,19 @@
           <!-- Positive Feelings Column (Green-tinted) -->
           <div class="feelings-column col-positive">
             <div class="feelings-col-header">
-              <svg class="feelings-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+              <svg class="feelings-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path
+                  d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+                </path>
               </svg>
               <h4 class="feelings-title">Positive feelings:</h4>
             </div>
             <div class="feelings-list">
               <div class="feeling-item">
                 <span class="feeling-num">1</span>
-                <p class="feeling-text">Students may feel confident and less stressed because help is available at any time.</p>
+                <p class="feeling-text">Students may feel confident and less stressed because help is available at any
+                  time.</p>
               </div>
               <div class="feeling-item">
                 <span class="feeling-num">2</span>
@@ -831,7 +1186,8 @@
               </div>
               <div class="feeling-item">
                 <span class="feeling-num">3</span>
-                <p class="feeling-text">Students may feel supported when doubts are cleared instantly, even late at night.</p>
+                <p class="feeling-text">Students may feel supported when doubts are cleared instantly, even late at
+                  night.</p>
               </div>
             </div>
           </div>
@@ -839,8 +1195,11 @@
           <!-- Negative Feelings Column (Red-tinted) -->
           <div class="feelings-column col-negative">
             <div class="feelings-col-header">
-              <svg class="feelings-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-3"></path>
+              <svg class="feelings-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path
+                  d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-3">
+                </path>
               </svg>
               <h4 class="feelings-title">Negative feelings:</h4>
             </div>
@@ -869,13 +1228,15 @@
         <div class="quote-box reveal">
           <div class="quote-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-8.983z"/>
+              <path
+                d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-8.983z" />
             </svg>
           </div>
           <div class="quote-content">
             <span class="quote-label">Answer to "Will I be able to solve it?":</span>
             <blockquote class="quote-body">
-              Yes. The problem is not the app itself but how it is used. We can solve it by treating the app as a support tool and not a substitute for thinking, teaching, and group learning.
+              Yes. The problem is not the app itself but how it is used. We can solve it by treating the app as a
+              support tool and not a substitute for thinking, teaching, and group learning.
             </blockquote>
           </div>
         </div>
@@ -889,7 +1250,8 @@
             <span>Conclusion</span>
           </div>
           <p class="conclusion-text">
-            Our gut feeling is cautiously optimistic. We welcome the convenience of AI, but we want students to still think for themselves, learn together, and truly understand.
+            Our gut feeling is cautiously optimistic. We welcome the convenience of AI, but we want students to still
+            think for themselves, learn together, and truly understand.
           </p>
         </div>
       </div>
@@ -901,10 +1263,12 @@
         <div class="content-wrapper header-band-content">
           <div class="hat-icon-wrapper">
             <svg class="hat-main-svg" viewBox="0 0 64 48" aria-hidden="true">
-              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#030712"/>
-              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#111827"/>
-              <path d="M25 10C29 13 35 13 39 10" stroke="#4B5563" stroke-width="2" stroke-linecap="round"/>
-              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#374151"/>
+              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z"
+                fill="#030712" />
+              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#111827" />
+              <path d="M25 10C29 13 35 13 39 10" stroke="#4B5563" stroke-width="2" stroke-linecap="round" />
+              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z"
+                fill="#374151" />
             </svg>
           </div>
           <div class="hat-title-group">
@@ -919,15 +1283,22 @@
         <div class="purpose-focus-card reveal">
           <div class="pf-block">
             <span class="pf-label">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 16 12 12 8"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+              </svg>
               Purpose
             </span>
-            <p class="pf-text">To identify possible problems, risks, disadvantages, and reasons the proposal might fail.</p>
+            <p class="pf-text">To identify possible problems, risks, disadvantages, and reasons the proposal might fail.
+            </p>
           </div>
           <div class="pf-divider" aria-hidden="true"></div>
           <div class="pf-block">
             <span class="pf-label">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
               Focus
             </span>
             <p class="pf-text">What could go wrong when students use the AI exam preparation app?</p>
@@ -935,7 +1306,8 @@
         </div>
 
         <div class="question-header reveal">
-          <h3 class="question-title">Q1. What are the potential downsides, problems, and risks involved? Mention them.</h3>
+          <h3 class="question-title">Q1. What are the potential downsides, problems, and risks involved? Mention them.
+          </h3>
         </div>
 
         <div class="card-grid">
@@ -946,14 +1318,19 @@
               <div class="card-inline-icon icon-risk" aria-hidden="true">
                 <!-- Brain with question / analysis icon -->
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04z"></path>
-                  <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04z"></path>
+                  <path
+                    d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04z">
+                  </path>
+                  <path
+                    d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04z">
+                  </path>
                 </svg>
               </div>
             </div>
             <div class="card-content">
               <h4 class="card-heading">Reduced critical thinking:</h4>
-              <p class="card-text">Students may accept AI answers without questioning them. They may practise less analysis, reasoning, and problem-solving.</p>
+              <p class="card-text">Students may accept AI answers without questioning them. They may practise less
+                analysis, reasoning, and problem-solving.</p>
             </div>
           </article>
 
@@ -970,7 +1347,8 @@
             </div>
             <div class="card-content">
               <h4 class="card-heading">Shortcut learning:</h4>
-              <p class="card-text">Students may memorise quiz patterns and simple explanations only to pass exams. This leads to surface-level learning instead of deep understanding.</p>
+              <p class="card-text">Students may memorise quiz patterns and simple explanations only to pass exams. This
+                leads to surface-level learning instead of deep understanding.</p>
             </div>
           </article>
 
@@ -990,7 +1368,8 @@
             </div>
             <div class="card-content">
               <h4 class="card-heading">Loss of group learning:</h4>
-              <p class="card-text">Students may study alone with the app instead of discussing and teaching each other. This reduces teamwork, communication, and peer learning.</p>
+              <p class="card-text">Students may study alone with the app instead of discussing and teaching each other.
+                This reduces teamwork, communication, and peer learning.</p>
             </div>
           </article>
 
@@ -1001,7 +1380,8 @@
               <div class="card-inline-icon icon-risk" aria-hidden="true">
                 <!-- Misleading answers / alert triangle -->
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                  </path>
                   <line x1="12" y1="9" x2="12" y2="13"></line>
                   <line x1="12" y1="17" x2="12.01" y2="17"></line>
                 </svg>
@@ -1009,7 +1389,8 @@
             </div>
             <div class="card-content">
               <h4 class="card-heading">Incorrect or misleading answers:</h4>
-              <p class="card-text">The chatbot may give wrong or oversimplified explanations. Students may trust them blindly, especially close to exams.</p>
+              <p class="card-text">The chatbot may give wrong or oversimplified explanations. Students may trust them
+                blindly, especially close to exams.</p>
             </div>
           </article>
 
@@ -1027,7 +1408,8 @@
             </div>
             <div class="card-content">
               <h4 class="card-heading">Over-dependence on AI:</h4>
-              <p class="card-text">Students may feel unable to study or solve doubts without the app. They may skip textbooks, notes, and teachers.</p>
+              <p class="card-text">Students may feel unable to study or solve doubts without the app. They may skip
+                textbooks, notes, and teachers.</p>
             </div>
           </article>
 
@@ -1045,7 +1427,8 @@
             </div>
             <div class="card-content">
               <h4 class="card-heading">Data privacy risks:</h4>
-              <p class="card-text">The app collects data on performance, weak areas, and study habits. If this data is leaked or misused, student privacy is affected.</p>
+              <p class="card-text">The app collects data on performance, weak areas, and study habits. If this data is
+                leaked or misused, student privacy is affected.</p>
             </div>
           </article>
 
@@ -1058,13 +1441,15 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="2" y1="12" x2="22" y2="12"></line>
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                  </path>
                 </svg>
               </div>
             </div>
             <div class="card-content">
               <h4 class="card-heading">Unfair or inaccurate personalisation:</h4>
-              <p class="card-text">Adaptive difficulty may wrongly judge a student's ability. It may keep some students on easy content and limit their growth.</p>
+              <p class="card-text">Adaptive difficulty may wrongly judge a student's ability. It may keep some students
+                on easy content and limit their growth.</p>
             </div>
           </article>
 
@@ -1087,7 +1472,8 @@
             </div>
             <div class="card-content">
               <h4 class="card-heading">Unequal access and cost:</h4>
-              <p class="card-text">Students without good devices, internet, or money for subscriptions may fall behind. This creates a gap between students.</p>
+              <p class="card-text">Students without good devices, internet, or money for subscriptions may fall behind.
+                This creates a gap between students.</p>
             </div>
           </article>
         </div>
@@ -1101,7 +1487,8 @@
             <span>Conclusion</span>
           </div>
           <p class="conclusion-text">
-            Students should not rely on the app alone. Teacher guidance, verification of AI answers, group study, and clear privacy policies are necessary.
+            Students should not rely on the app alone. Teacher guidance, verification of AI answers, group study, and
+            clear privacy policies are necessary.
           </p>
         </div>
       </div>
@@ -1113,10 +1500,12 @@
         <div class="content-wrapper header-band-content">
           <div class="hat-icon-wrapper">
             <svg class="hat-main-svg" viewBox="0 0 64 48" aria-hidden="true">
-              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#CA8A04"/>
-              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#EAB308"/>
-              <path d="M25 10C29 13 35 13 39 10" stroke="#FEF08A" stroke-width="2" stroke-linecap="round"/>
-              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#A16207"/>
+              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z"
+                fill="#CA8A04" />
+              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#EAB308" />
+              <path d="M25 10C29 13 35 13 39 10" stroke="#FEF08A" stroke-width="2" stroke-linecap="round" />
+              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z"
+                fill="#A16207" />
             </svg>
           </div>
           <div class="hat-title-group">
@@ -1131,15 +1520,22 @@
         <div class="purpose-focus-card reveal">
           <div class="pf-block">
             <span class="pf-label">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 16 12 12 8"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+              </svg>
               Purpose
             </span>
-            <p class="pf-text">To focus on advantages, positive outcomes, opportunities, and the value of the proposal.</p>
+            <p class="pf-text">To focus on advantages, positive outcomes, opportunities, and the value of the proposal.
+            </p>
           </div>
           <div class="pf-divider" aria-hidden="true"></div>
           <div class="pf-block">
             <span class="pf-label">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
               Focus
             </span>
             <p class="pf-text">How can the AI exam preparation app benefit students and educators?</p>
@@ -1165,7 +1561,8 @@
             </div>
             <div class="card-content">
               <h4 class="card-heading">Personalised learning:</h4>
-              <p class="card-text">The app adapts difficulty to each student's level, so everyone learns at their own pace.</p>
+              <p class="card-text">The app adapts difficulty to each student's level, so everyone learns at their own
+                pace.</p>
             </div>
           </article>
 
@@ -1215,13 +1612,16 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M9 18h6"></path>
                   <path d="M10 22h4"></path>
-                  <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path>
+                  <path
+                    d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14">
+                  </path>
                 </svg>
               </div>
             </div>
             <div class="card-content">
               <h4 class="card-heading">Simple explanations:</h4>
-              <p class="card-text">Complex concepts are explained in easy terms, which helps students who find a topic hard.</p>
+              <p class="card-text">Complex concepts are explained in easy terms, which helps students who find a topic
+                hard.</p>
             </div>
           </article>
 
@@ -1275,7 +1675,8 @@
             </div>
             <div class="card-content">
               <h4 class="card-heading">Support for teachers:</h4>
-              <p class="card-text">Teachers can use the data on common weak areas to plan better lessons and spend class time on discussion.</p>
+              <p class="card-text">Teachers can use the data on common weak areas to plan better lessons and spend class
+                time on discussion.</p>
             </div>
           </article>
 
@@ -1288,7 +1689,8 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="2" y1="12" x2="22" y2="12"></line>
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                  </path>
                 </svg>
               </div>
             </div>
@@ -1308,7 +1710,8 @@
             <span>Conclusion</span>
           </div>
           <p class="conclusion-text">
-            Used properly, the app improves learning efficiency, confidence, and exam performance, and supports teachers instead of replacing them.
+            Used properly, the app improves learning efficiency, confidence, and exam performance, and supports teachers
+            instead of replacing them.
           </p>
         </div>
       </div>
@@ -1320,10 +1723,12 @@
         <div class="content-wrapper header-band-content">
           <div class="hat-icon-wrapper">
             <svg class="hat-main-svg" viewBox="0 0 64 48" aria-hidden="true">
-              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#15803D"/>
-              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#16A34A"/>
-              <path d="M25 10C29 13 35 13 39 10" stroke="#86EFAC" stroke-width="2" stroke-linecap="round"/>
-              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#14532D"/>
+              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z"
+                fill="#15803D" />
+              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#16A34A" />
+              <path d="M25 10C29 13 35 13 39 10" stroke="#86EFAC" stroke-width="2" stroke-linecap="round" />
+              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z"
+                fill="#14532D" />
             </svg>
           </div>
           <div class="hat-title-group">
@@ -1338,7 +1743,10 @@
         <div class="purpose-focus-card reveal">
           <div class="pf-block">
             <span class="pf-label">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 16 12 12 8"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+              </svg>
               Purpose
             </span>
             <p class="pf-text">To stimulate new ideas, possibilities, and alternative solutions.</p>
@@ -1346,10 +1754,14 @@
           <div class="pf-divider" aria-hidden="true"></div>
           <div class="pf-block">
             <span class="pf-label">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
               Focus
             </span>
-            <p class="pf-text">What new ideas or creative solutions can we generate? What are some different perspectives?</p>
+            <p class="pf-text">What new ideas or creative solutions can we generate? What are some different
+              perspectives?</p>
           </div>
         </div>
 
@@ -1360,7 +1772,9 @@
             <div class="plan-panel-header">
               <div class="plan-badge badge-primary-plan">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
                 </svg>
                 <span>Primary Plan</span>
               </div>
@@ -1381,7 +1795,8 @@
                 <div class="card-badge">2</div>
                 <div class="card-content">
                   <h4 class="card-heading">Reasoning Prompts</h4>
-                  <p class="card-text">Add "explain your reasoning" prompts, so the chatbot gives hints first and full answers later.</p>
+                  <p class="card-text">Add "explain your reasoning" prompts, so the chatbot gives hints first and full
+                    answers later.</p>
                 </div>
               </article>
 
@@ -1389,7 +1804,8 @@
                 <div class="card-badge">3</div>
                 <div class="card-content">
                   <h4 class="card-heading">Group Study Integration</h4>
-                  <p class="card-text">Organise group quiz sessions and peer-teaching so the app's weak-area data feeds group study.</p>
+                  <p class="card-text">Organise group quiz sessions and peer-teaching so the app's weak-area data feeds
+                    group study.</p>
                 </div>
               </article>
 
@@ -1397,7 +1813,8 @@
                 <div class="card-badge">4</div>
                 <div class="card-content">
                   <h4 class="card-heading">Faculty Review Sessions</h4>
-                  <p class="card-text">Have teachers review class-level insights and run doubt-clearing and discussion sessions.</p>
+                  <p class="card-text">Have teachers review class-level insights and run doubt-clearing and discussion
+                    sessions.</p>
                 </div>
               </article>
 
@@ -1421,7 +1838,8 @@
                 <div class="card-badge">7</div>
                 <div class="card-content">
                   <h4 class="card-heading">Deeper Comprehension Assessments</h4>
-                  <p class="card-text">Include assessments that test understanding, such as viva, case studies, and open-ended questions, not just recall.</p>
+                  <p class="card-text">Include assessments that test understanding, such as viva, case studies, and
+                    open-ended questions, not just recall.</p>
                 </div>
               </article>
             </div>
@@ -1462,7 +1880,8 @@
                 <div class="card-badge">3</div>
                 <div class="card-content">
                   <h4 class="card-heading">College-Managed Platform</h4>
-                  <p class="card-text">Build or choose a college-managed, syllabus-aligned AI tool with teacher oversight and better data control.</p>
+                  <p class="card-text">Build or choose a college-managed, syllabus-aligned AI tool with teacher
+                    oversight and better data control.</p>
                 </div>
               </article>
 
@@ -1470,7 +1889,8 @@
                 <div class="card-badge">4</div>
                 <div class="card-content">
                   <h4 class="card-heading">Traditional Learning Focus</h4>
-                  <p class="card-text">Switch back to traditional methods such as study groups, mentoring, and faculty-led revision, using AI only for practice questions.</p>
+                  <p class="card-text">Switch back to traditional methods such as study groups, mentoring, and
+                    faculty-led revision, using AI only for practice questions.</p>
                 </div>
               </article>
             </div>
@@ -1485,10 +1905,12 @@
         <div class="content-wrapper header-band-content">
           <div class="hat-icon-wrapper">
             <svg class="hat-main-svg" viewBox="0 0 64 48" aria-hidden="true">
-              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z" fill="#1E3A8A"/>
-              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#2563EB"/>
-              <path d="M25 10C29 13 35 13 39 10" stroke="#93C5FD" stroke-width="2" stroke-linecap="round"/>
-              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z" fill="#172554"/>
+              <path d="M4 38C12 34 22 33 32 33C42 33 52 34 60 38C62 39 60 42 56 42C45 42 19 42 8 42C4 42 2 39 4 38Z"
+                fill="#1E3A8A" />
+              <path d="M16 34C15 24 16 12 24 8C27 6 37 6 40 8C48 12 49 24 48 34" fill="#2563EB" />
+              <path d="M25 10C29 13 35 13 39 10" stroke="#93C5FD" stroke-width="2" stroke-linecap="round" />
+              <path d="M16 30C21 28 43 28 48 30C47.8 33 47.5 35 47 35C42 33 22 33 17 35C16.5 35 16.2 33 16 30Z"
+                fill="#172554" />
             </svg>
           </div>
           <div class="hat-title-group">
@@ -1504,7 +1926,8 @@
             <div class="card-badge">1</div>
             <div class="card-content">
               <h4 class="card-heading">Demonstrated Core Value</h4>
-              <p class="card-text">The app offers real value through personalised practice, instant help, and efficient revision.</p>
+              <p class="card-text">The app offers real value through personalised practice, instant help, and efficient
+                revision.</p>
             </div>
           </article>
 
@@ -1512,7 +1935,8 @@
             <div class="card-badge">2</div>
             <div class="card-content">
               <h4 class="card-heading">Key Risk Factors</h4>
-              <p class="card-text">Its main risks are reduced critical thinking, shortcut learning, loss of group learning, wrong answers, and data privacy.</p>
+              <p class="card-text">Its main risks are reduced critical thinking, shortcut learning, loss of group
+                learning, wrong answers, and data privacy.</p>
             </div>
           </article>
 
@@ -1520,7 +1944,8 @@
             <div class="card-badge">3</div>
             <div class="card-content">
               <h4 class="card-heading">Optimal Implementation Approach</h4>
-              <p class="card-text">The best approach is balanced, guided use: AI for practice and support, teachers for guidance, and group learning for deeper understanding.</p>
+              <p class="card-text">The best approach is balanced, guided use: AI for practice and support, teachers for
+                guidance, and group learning for deeper understanding.</p>
             </div>
           </article>
         </div>
@@ -1536,7 +1961,8 @@
           </div>
           <h3 class="decision-title">Final decision:</h3>
           <p class="decision-text">
-            Adopt the AI exam preparation app as a supporting tool, with teacher supervision, privacy safeguards, and activities that build critical thinking and teamwork.
+            Adopt the AI exam preparation app as a supporting tool, with teacher supervision, privacy safeguards, and
+            activities that build critical thinking and teamwork.
           </p>
         </div>
       </div>
@@ -1545,7 +1971,8 @@
 
   <!-- Floating Back to Top Button -->
   <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Scroll back to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+      stroke-linejoin="round" aria-hidden="true">
       <polyline points="18 15 12 9 6 15"></polyline>
     </svg>
   </button>
@@ -1556,7 +1983,8 @@
       <div class="footer-left">
         <p class="footer-text font-semibold">Six Thinking Hats by Edward de Bono</p>
         <p class="footer-subtext">AI-Powered Exam Preparation App for University Students</p>
-        <p class="footer-author-meta">Prepared by: <strong>Sakshi Chourasia</strong> &bull; PRN: <strong>26070126190</strong></p>
+        <p class="footer-author-meta">Prepared by: <strong>Sakshi Chourasia</strong> &bull; PRN:
+          <strong>26070126190</strong></p>
       </div>
       <div class="footer-right">
         <div class="footer-hat-legend" aria-hidden="true">
@@ -1571,6 +1999,95 @@
     </div>
   </footer>
 
+  <!-- Interactive Impact Modal Dialog (Opened from top-right corner) -->
+  <div id="impact-modal" class="impact-modal" role="dialog" aria-modal="true" aria-labelledby="impact-modal-title" aria-hidden="true">
+    <div class="impact-modal-backdrop" id="impact-modal-backdrop"></div>
+    <div class="impact-modal-container">
+      <div class="impact-modal-card">
+        <div class="impact-modal-header">
+          <div class="impact-modal-badge">
+            <span class="impact-star-icon" aria-hidden="true">💡</span>
+            <span>Real-World Significance &amp; Practical Problem Solving</span>
+          </div>
+          <button id="impact-modal-close" class="modal-close-btn" aria-label="Close dialog" title="Close (Esc)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <div class="impact-modal-body">
+          <h3 id="impact-modal-title" class="modal-headline">
+            Why This Project &amp; Framework Matters in Real Life
+          </h3>
+          <p class="modal-lead">
+            Generative AI is revolutionizing how university students prepare for examinations, but without a rigorous cognitive framework, it creates an epidemic of <strong>shortcut learning</strong> and <strong>academic polarization</strong>.
+          </p>
+
+          <div class="modal-highlights-grid">
+            <div class="modal-highlight-card">
+              <div class="highlight-icon">⚠️</div>
+              <div class="highlight-content">
+                <h4>The Real-Life Crisis</h4>
+                <p><strong>The "Illusion of Competence":</strong> AI bots make answers look so clear that students overestimate their mastery. When faced with invigilated closed-book exams, recall collapses.</p>
+              </div>
+            </div>
+
+            <div class="modal-highlight-card">
+              <div class="highlight-icon">🛡️</div>
+              <div class="highlight-content">
+                <h4>What This Project Solves</h4>
+                <p><strong>From Cheat Engine to Socratic Coach:</strong> We redesign the AI from an answer generator into an active retrieval partner that promotes cognitive struggle and deep comprehension.</p>
+              </div>
+            </div>
+
+            <div class="modal-highlight-card">
+              <div class="highlight-icon">⚖️</div>
+              <div class="highlight-content">
+                <h4>The Six Hats Advantage</h4>
+                <p><strong>A 360° Balanced Resolution:</strong> Harmonizes hard benchmark data (White), human fears (Red), vulnerability defenses (Black), tutoring benefits (Yellow), creative redesigns (Green), and policy governance (Blue).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-contrast-box">
+            <div class="contrast-col col-without">
+              <span class="contrast-title">❌ Without This Framework</span>
+              <ul>
+                <li>Impulsive campus-wide bans that students easily bypass</li>
+                <li>Over-reliance on solitary bots eroding peer study groups</li>
+                <li>Hallucinated citations and unverified formulas memorized blindly</li>
+              </ul>
+            </div>
+            <div class="contrast-col col-with">
+              <span class="contrast-title">✅ With This Framework</span>
+              <ul>
+                <li>Transparent university policies &amp; syllabus-aligned verified AI</li>
+                <li>Active Socratic questioning &amp; peer-review challenge rounds</li>
+                <li>AI-resilient assessments (oral defenses, process portfolios)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="impact-modal-footer">
+          <a href="#why-this-matters" id="modal-jump-section" class="modal-action-btn btn-primary">
+            <span>Read Full In-Depth Analysis on Page</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <button id="modal-secondary-close" class="modal-action-btn btn-secondary">
+            Dismiss
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
+
 </html>

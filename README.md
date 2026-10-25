@@ -1,21 +1,30 @@
-# Six Thinking Hats: Scenario 2
+# Problem Solving Using Six Thinking Hats
 
-> **AI-Powered Exam Preparation App for University Students**  
+> **A Critical Analysis of an AI-Powered Exam Preparation App for University Students**  
 > A structured analysis using Edward de Bono's Six Thinking Hats framework.  
-> **Prepared by:** Sakshi Chourasia (PRN: 26070126190)
+>
+> - **Student Name:** Sakshi Chourasia  
+> - **PRN:** 26070126190  
+> - **Branch:** AIML  
+> - **Division:** C2  
+> - **Subject:** Critical Thinking  
+> - **Professor’s Name:** Riddhi Pankhdiwala  
+> - **Submission Date:** 27 October 2026  
+>
+> *This assignment applies Edward de Bono’s Six Thinking Hats method to a student-created digital case analysis of an AI-powered exam-preparation app.*
 
 ## 🎩 Overview
 
 This project provides a comprehensive, interactive single-page analysis evaluating whether and how university students and educators should adopt an AI-based exam preparation mobile app.
 
 ### The Six Hats Framework Applied:
-1. **White Hat (Facts & Information):** Known facts about the app and missing facts that universities still need.
-2. **Blue Hat (Process & Control):** Objective agenda and the procedural stepper for the thinking sequence.
-3. **Red Hat (Feelings & Intuition):** Gut reactions with side-by-side positive and negative emotional perspectives, plus the core verdict on solving the problem.
-4. **Black Hat (Caution & Risks):** 8 critical risks including critical thinking erosion, shortcut learning, group learning loss, and privacy issues.
-5. **Yellow Hat (Benefits & Value):** 8 key advantages including personalization, weak-area targeting, and 24/7 doubt resolution.
-6. **Green Hat (Creativity & Ideas):** Primary Plan (guided & balanced classroom integration) and Alternative Plan (controlled & supervised deployment).
-7. **Blue Hat Closing (Conclusions & Final Decision):** Strategic synthesis and final adoption decision.
+1. **White Hat (Facts and Information):** Focuses on objective facts, available evidence, and missing information. Distinguishes supplied app features from evidence that still needs to be collected about actual learning.
+2. **Red Hat (Feelings and Intuition):** Expresses emotions, expectations, concerns, and intuitive reactions from students, educators, and the startup without presenting them as factual conclusions.
+3. **Black Hat (Caution and Risk):** Examines drawbacks, limitations, risks, and failure points such as academic dependence, superficial learning, loss of peer collaboration, inaccurate AI answers, privacy, and unequal access.
+4. **Yellow Hat (Benefits and Value):** Explores positive outcomes and practical value, including personalized practice, timely explanations, weak-area targeting, flexible study schedules, and educator insights.
+5. **Green Hat (Creativity and Ideas):** Generates practical improvements (Think-First Mode, Progressive Hints, Explain-Your-Reasoning Mode, Deep Learning Challenges, Peer Learning Mode, AI-Free Practice, Reflection Journal, Responsible AI Feedback) along with a primary plan and alternative blended plan.
+6. **Blue Hat (Process and Control):** Organises the overall thinking sequence (White → Red → Black → Yellow → Green → Blue) and sets a 5-phase monitored implementation and evaluation plan.
+7. **Final Conclusion:** Strategic synthesis recommending testing the enhanced app through a monitored pilot before broader institutional adoption. Includes project showcase link to [AI-Powered Hat Classification](https://hatclassification.vercel.app/).
 
 ## 📱 Core Scenario Application Features
 
@@ -35,6 +44,12 @@ Experience the app in real time directly on the page:
 - **💡 Concept Simplifier:** Select topics (Virtual Memory, CAP Theorem, Backpropagation, RSA, Semaphores) or type any custom topic to receive an ELI5 everyday analogy, 3-step breakdown, and university exam traps.
 - **📊 Weak Area Tracker:** Diagnostic mastery dashboard featuring animated topic progress bars, real-time AI revision recommendations, and an interactive "Simulate Revision Session" button.
 
+## 📄 Generated PDF Documents
+
+The assignment is compiled and ready for submission as a publication-grade PDF:
+- **`Problem_Solving_Using_Six_Thinking_Hats_Sakshi_Chourasia.pdf`**: The complete academic submission document, formatted in standard A4 with cover metadata, styled tables, color-coded hat sections, verbatim answers, and running headers/footers.
+- **`Six_Thinking_Hats_Scenario_2.pdf`**: Exact replica of the submission PDF for convenience.
+
 ## 🚀 Website & Architecture Features
 
 - **Responsive Single-Page Layout:** Fluid on desktop (1440px+), tablet, and mobile (390px).
@@ -53,10 +68,10 @@ Open `index.html` directly in any web browser:
 open index.html
 ```
 
-Or run a local static server:
+Or view the generated PDF directly:
 
 ```bash
-npx serve .
+open Problem_Solving_Using_Six_Thinking_Hats_Sakshi_Chourasia.pdf
 ```
 
 ## 📄 License
